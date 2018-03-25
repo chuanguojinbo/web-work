@@ -1,0 +1,32 @@
+<!doctype html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>标签选择器示例</title>
+	<style type="text/css">
+		h2,p,h3{/*这里是分组选择器,别搞混*/
+			margin:0;padding:0;height:30px;}
+		p~h3{/*兄弟选择器,同一级别的前置元素~后置所有匹配元素*/
+			background-color:#0099FF;}
+	</style>
+<body>
+	<div class="header">
+		<h2>情况一：</h2>
+		<p>子选择器控制p标签，能控制我吗</p>
+		<h3>子选择器控制p标签</h3>
+		<h2>情况二：</h2>
+		<div>我隔开段落</div>
+		<p>子选择器控制p标签，能控制我吗</p>
+		<h3>相邻选择器</h3>
+		<h2>情况三：</h2>
+		<h3>相邻选择器</h3>
+		<p>子选择器控制p标签，能控制我吗</p>
+		<div>
+			<h2>情况四</h2>
+			<p>子选择器控制p标签，能控制我吗</p>
+			<h3>相邻选择器</h3>
+		</div>
+	</div>
+<!--只要h3和p,是在同一框架中且属于同级别,并且有顺序,则无需两者紧靠-->
+</body>
+</html>

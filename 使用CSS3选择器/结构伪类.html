@@ -1,0 +1,58 @@
+<!doctype html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>结构伪类</title>
+	<style type="text/css">
+		body{background:url(../images/country-path.jpg) no-repeat;
+			height:2617px;width:980px;}
+		#wrap{position:absolute;width:249px;height:249px;z-index:1;
+			left:712px;top:201px;}
+		#wrap ul{list-style-type:none;margin:0;padding:0;font-size:12px;
+			color:#777;}
+		#wrap li{background:url(../images/climber.jpg) no-repeat 2px 10px;padding:1px 0px 0px 28px;line-height:30px;}
+		#wrap li a{text-decoration:none;color:#777;}
+		#wrap li a:hover{color:#f63;}
+		#wrap li:first-child{/*选中了第一个列表项*/
+			background-positon:2px 10px;
+			font-weight:bold;font-size:20px;}
+		#wrap li:last-child{/*选中了最后一个列表项*/
+				background-position:2px -277px;}
+		#wrap li:nth-child(2){/*选中第二个列表项*/
+			background-position:2px -31px;}
+		/*#wrap li:nth-child(2n),选中了第2,4,6,8项
+		：nth-child(n)没有指定类型，选择的是父元素下的第n个任何类型子元素
+		p:nth-child(n)和上面基本一样，但第n个元素一定要是p类型
+		#wrap li:nth-child(2n-1),选中所有的奇数项
+		#wrap li:nth-child(n+5)，选中5和之后的所有项
+		#wrap li:nth-child(-n+5),选中5和之前的所有项
+		#wrap li:nth-child(3n+1),选中1项，每隔3项选择一项*/
+		/*#wrap li:nth-last-child(),和上面的反着来*/
+		/*p:nth-of-type(even)只在父元素下的p元素中选择，并且选中序号为偶数的
+		p元素*/
+		/*:nth-last-of-type()与:nth-last-type()用法相同，但指定了子元素的类型*/
+		/*:first-of-type()和:last-of-type()类似于:first-child,:last-child,
+			多指定了元素的类型*/
+		/*.post p:only-child{background:red;}在div.post中只有一个元素，
+		且为p元素时，背景色为红色*/
+		/*.post p:only-of-child{background:red;}在div.post中有许多子元素
+		且只有唯一一个p元素时，p元素的背景色为红色*/
+		/*:empty用来选择没有任何内容的元素，比如<p></p>*/
+		
+	</style>
+</head>
+<body>
+	<div id="wrap">
+		<ul id="container">
+			<li><a href="#">送均潜力 中蓄意别</a></li>
+			<li><a href="#">旅行的意义</a></li>
+			<li><a href="#">男士岁去,精神永存</a></li>
+			<li><a href="#">榴莲糯米次</a></li>
+			<li><a href="#">阿尔及利亚 天明之年</a></li>
+			<li><a href="#">白菜肌肉粉丝包</a></li>
+			<li><a href="#">《展望踏上的杀人》</a></li>
+			<li><a href="#">我们，只会在路上相遇</a></li>
+		</ul>
+	</div>
+</body>
+</html>

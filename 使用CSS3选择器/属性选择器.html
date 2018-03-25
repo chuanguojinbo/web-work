@@ -1,0 +1,63 @@
+<!doctype html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>id选择器示例</title>
+	<style type="text/css">
+		/*灯箱外框样式*/
+		.pic_box{border:solid 6px #bbb;position:relative;float:left;}
+		.pic_box img{width:500px;border:solid 1px #fff;}
+		/*导航框样式*/
+		.nav{background:#999;border:solid 1px #ccc;padding:4px 12px;
+			float:left;opacity:0.6;position:absolute;bottom:6px;
+			right:12px;}
+		/*导航按钮设置*/
+		.nav a{float:left;display:block;height:20px;line-height:20px;
+			width:20px;-moz-border-radius:10px;
+			-webkit-border-radius:10px;border-radius:10px;
+			text-align:center;background:#f36;color:green;
+			margin-right:5px;text-decoration:none;}
+		.nav a:hover{background:green;color:#fff;}
+		/*属性选择器E[attr]
+		.nav a[id]{background:blue;color:yellow;font-weight:bold;}
+		同时具有两种属性的改变样式
+		.nav a[href][title]{background:yellow;color:green;}*/
+		/*E[attr="value"],只有标号1会被改变
+		.nav a[id="first"]{background:blue;color:yellow;
+			font-weight:bold;}*/
+		/*E[attr~="value"],对于含有多个值的属性值,只要满足其中一个值就能被选中
+		.nav a[title~="website"]{background:orange;color:green;}*/
+		/*E[attr^="value"],选择属性值以value开头的所有元素          
+		.nav a[title^="http://"]{background:orange;color:green;}*/
+		/*E[attr*="value"],只需要包含属性值中的某个子串就能被选中
+		.nav a[title*="site"]{background:black;color:white;}*/
+		/*E[attr$="value"],选择属性值以value结尾的所有元素
+		.nav a[href$="png"]{........}表示有href属性的且以png结尾的a元素
+			选中*/
+		/*E[attr|="value"],选中属性值等于value或者以value开头的元素*/
+		.nav a[lang|="zh"]{background:gray;color:yellow;}
+
+			
+	</style>
+<body>
+	<div class="pic_box">
+		<img src="images/country-path.jpg" />
+		<div class="nav">
+			<a href="#1" class="links item first" title="w3cplus"   
+				target="_blank" id="first">1</a>
+			<a href="#2" class="links active item" title="test 
+				website" target="_blank" lang="zh">2</a>
+			<a href="#3" class="links item" title="this is a link" 					lang="zh-cn">3</a>
+			<a href="#4" class="links item" target="_blank" 
+				lang="zh-tw">4</a>
+			<a href="#5" class="links item" title="zh-cn">5</a>
+			<a href="#6" class="links item" title="website link" 					lang="zh">6</a>
+			<a href="#7" class="links item" title="open the website" 					lang="cn">7</a>
+			<a href="#8" class="links item" title="close the 					website" lang="en-zh">8</a>
+			<a href="#9" class ="links item" 
+				title="http://www.baidu.com">9</a>
+			<a href="#10" class="links item last" id="last">10</a>
+		</div>
+	</div>		
+</body>
+</html>

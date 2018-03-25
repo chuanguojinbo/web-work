@@ -1,0 +1,47 @@
+<!doctype html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>否定伪类</title>
+	<style>
+		table{border-collapse:collapse;font-size:75%;line-height:1.4;
+			border:solid 2px #ccc;width:100%;}
+		th,td{padding:.3em .5em;cursor:pointer;}
+		th{font-weight:normal;text-align:left;padding-left:15px;}
+		td:only-of-type{font-weight:bold;color:#444;}
+		tbody th:not(.end){background:url(../images.climber.jpg) 15px 56% no-repeat;padding-left:26px;}
+		tbody th.end{background:url(../images.country-path.jpg) 15px 56% no-repeat;padding-left:26px;}
+		thead th{background:#c6ceda;border-color:#fff #fff #888 #fff;
+border-style:solid;border-width:1px 1px 2px 1px;padding-left:-5em;}
+		tbody tr:nth-child(2n){background:#fef;}
+		tbody tr:hover{background:#fbf;}
+	</style>
+</head>
+<body>
+	<table>
+		<thead>
+			<tr>
+				<th>编号</th>
+				<th>表达式</th>
+				<th>说明</th>
+			</tr>
+		</thead>
+		<tbody>
+			<tr><td colspan="3">简单的结构伪类</td></tr>
+			<tr><th>1</th><td>:first-child</td><td>选择某个元素的第一个子元素</td></tr>
+			<tr><th>2</th><td>:last-child</td><td>选择某个元素的最后一个子元素</td></tr>
+			<tr><th>3</th><td>:first-of-type</td><td>选择一个上级元素下的第一个指定类型子元素</td></tr>
+			<tr><th>4</th><td>:last-of-type</td><td>选择一个上级元素下的最后一个指定类型子元素</td></tr>
+			<tr><th>5</th><td>:only-child</td><td>选择父元素的唯一一个子元素</td></tr>
+			<tr><th>6</th><td>:only-of-type</td><td>选择父元素的唯一一个指定类型的子元素</td></tr>
+			<tr><th>7</th><td>:empty</td><td>选择没有任何内容的元素</td></tr>
+			<tr><td colspan="3">结构伪类函数</td></tr>
+			<tr><th>8</th><td>:nth-child()</td><td>选择父元素下的一个或多个子元素</td></tr>
+			<tr><th>9</th><td>:nth-last-child()</td><td>选择父元素下的一个或多个子元素，倒着数</td></tr>
+			<tr><th>10</th><td>:nth-of-type()</td><td>选择父元素下指定类型的一个或多个元素</td></tr>
+			<tr><th>11</th><td>:nth-last-of-type()</td><td>和上面差不多，只不过倒着来</td></tr>
+				
+		</tbody>
+	</table>
+</body>			
+</html>
