@@ -1,0 +1,37 @@
+<!--以下是一个简单的登录表单-->
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>状态伪类用于登录表单</title>
+<style>
+	input[type="text"],input[type="password"]{
+		border:1px solid #0f0;
+		width:160px;
+		height:22px;
+		padding-left:20px;
+		margin:6px 0;
+		line-height:20px;}
+	input[type="text"]{
+		background:url(/home/chuanguojinbo/图片/country-path.jpg) no-repeat 2px 2px;}
+	input[type="password"]{
+		background:url(/home/chuanguojinbo/图片/climber.jpg) no-repeat 2px 2px;}
+	input[type="text"]:disabled{background:#ddd ;border:1px solid #bbb}
+	input[type='password']:disabled{background:#ddd;border:1px solid #bbb}
+</style>
+</head>
+<body>
+	<form action="#">
+		<label for="username">用户名</label>
+		<input type="text" name="username" id="username"/>
+		<input type="text" name="username1" disabled="disabled" value="不可用"/>
+		
+		<br/>
+		<label for="password">密码</label>
+		<input type="password" name="password" id="password"/>
+		<input type="password" name="password1" disabled="disabled" value="不可用"/>
+		<input type="submit" value="提交"/>
+	</form>
+</body>
+</html>
+
