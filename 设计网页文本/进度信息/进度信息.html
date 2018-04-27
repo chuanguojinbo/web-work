@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title></title>
+</head>
+<body>
+<section>
+	<p>百分比进度：<progress id="progress" max="100"><span>0</span>%</progress></p>
+	<input type="button" onclick="click1()" value="显示进度">
+</section>
+<script>
+	function click1(){
+		var progress=document.getElementById('progress');
+		progress.getElementsByTagName('span')[0].textContent="0";
+		for (var i=0;i<=50;i++)
+			updateProgress(i);
+	}
+	function updateProgress(newValue){
+		var progress=document.getElementById('progress');
+		progress.value=newValue;
+		progress.getElementsByTagName('span')[0].textContent=newValue;
+	}
+</script>
+</body>
+</html>

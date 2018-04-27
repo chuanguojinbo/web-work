@@ -1,0 +1,70 @@
+<!doctype html>
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+	<meta charset="utf-8">
+	<style type="text/css">
+	body{
+		background:url(images/bg2.jpg) no-repeat;
+		width:995px;
+		height:1401px;
+	}
+	#wrap{
+		position:absolute;
+		width:242px;
+		height:232px;
+		z-index:1;
+		left:737px;
+		top:395px;
+	}
+	a{
+		padding-left:24px;
+		text-decoration:none;
+	}
+	span{
+		color:#999;
+		font-size:12px;
+		display:block;
+		padding-left:24px;
+		padding-bottom:6px;
+	}
+	p{
+		margin:4px;
+	}
+	a[href^="http:"]{
+		/*匹配所有有效的超链接*/
+	}
+	a[href$="pdf"]{
+		/*匹配所有pdf文件*/
+		background:url(images/pdf.jpg) no-repeat left center;
+	}
+	a[href$="ppt"]{
+		/*匹配演示文稿*/
+		background:url(images/ppt.jpg) no-repeat left center;
+	}
+	a[href$="txt"]{
+		/*匹配记事本文件*/
+		background:url(images/txt.jpg) no-repeat left center;
+	}
+	a[href$="doc"]{
+		/*匹配word文件*/
+		background:url(images/doc.jpg) no-repeat left center;
+	}
+	a[href$="xls"]{
+		/*匹配Excel文件*/
+		background:url(images/xls.jpg) no-repeat left center;
+	}
+</style>
+</head>
+<body>
+<div id="wrap">
+	<p><a href="http://www.baidu.com/name.pdf">移动互联网</a><span><img src="images/star1.jpg">81页 免费</span></p>
+	<p><a href="http://www.baidu.com/name.ppt">什么是移动互联网</a><span><img src="images/star1.jpg">8页 1财富值</span></p>
+	<p><a href="http://www.baidu.com/name.xls">中国移动互联网</a><span><img src="images/star1.jpg">38页 1财富值</span></p>
+	<p><a href="http://www.baidu.com/name.txt">移动互联网</a><span><img src="images/star2.jpg">57页 5财富值</span></p>
+	<p><a href="http://www.baidu.com/name.doc">移动互联网</a><span><img src="images/star2.jpg">42页 2财富值</span></p>
+</div>
+
+</body>
+</html>
