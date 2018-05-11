@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title></title>
+	<style type="text/css">
+	.demo{
+		width:400px;
+		border:20px solid rgba(104,104,142,0.5);
+		border-radius:10px;
+		padding:30px 30px;
+		color:#f36;
+		font-size:80px;
+		font-family:"隶书";
+		line-height:1.5;
+		text-align:center;
+	}
+	.multipleBg{
+		background:url(images/bg-tl.png) no-repeat left top,url(images/bg-tr.png) no-repeat right top ,url(images/bg-bl.png) no-repeat bottom left,url(images/bg-br.png) no-repeat bottom right,url(images/bg-repeat.png) repeat left top;
+		-webkit-background-origin:border-box,border-box,border-box,border-box,padding-box;
+		-moz-background-origin:border-box,border-box,border-box,border-box,padding-box;
+		-o-background-origin:border-box,border-box,border-box,border-box,padding-box;
+		background-origin:border-box,border-box,border-box,border-box,padding-box;
+		/*控制背景图片的显示区域，所有背景图片超过border边缘的都将被剪切掉*/
+		-moz-background-clip:border-box;
+		-webkit-background-clip:border-box;
+		-o-background-clip:border-box;
+		background-clip:border-box;
+	}
+</style> 
+</head>
+<body>
+<div class="demo multipleBg">恭喜发财</div>
+</body>
+</html>

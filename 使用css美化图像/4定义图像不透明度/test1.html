@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title></title>
+	<style type="text/css">
+	img{
+		width:300px;
+	}
+	.opacity{
+		opacity:0.3;
+		filter:alpha(opacity=30);
+		/*兼容IE早期版本浏览器*/
+		-moz-opacity:0.3;
+		/*兼容Firefox浏览器*/ 
+	}
+</style> 
+</head>
+<body>
+<img src="images/1.png" title="图像不透明度">
+<img class="opacity" src="images/1.png" title="图像透明度为0.3">
+</body>
+</html>
