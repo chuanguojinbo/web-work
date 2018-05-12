@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title></title>
+</head>
+<body>
+<menu type="context" id="mymenu">
+	<menuitem label="refresh" onclick="window.location.reload();" icon="ico_reload.png">联系朋友</menuitem>
+	<menu label="share on...">
+		<menuitem label="twitter" icon="icon_twitter.png" onclick="window.open('//twitter.com/intent/tweet?text='+window.location.href);">Twitter</menuitem>
+		<menuitem label="facebook" icon="icon_facebook.png" onclick="window.open('//facebook.com/sharer/sharer.php?u='+window.location.href);">Facebook</menuitem>
+	</menu>
+	<menuitem label="email this page" onclick="window.location='mailto:?body='+window.location.href;">邮件</menuitem>
+</menu>
+</body>
+</html>

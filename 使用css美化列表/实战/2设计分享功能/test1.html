@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title></title>
+	<script>
+		var post={
+			"source":"images/liuyong.rar",
+			"demo":"images/liuyong.jpg",
+			"feed":"http://www.weibo.com"/
+		};
+		function downloadSource(){
+			window.open(post.source,"_self");
+		}
+		function viewDemo(){
+			window.open(post.demo,'_blank');
+		}
+		function getFeed(){
+			window.prompt('发送地址：',post.feed);
+		}
+		function sendEmail(){
+			var url=document.URL;
+			var body='分享地址：'+url+'';
+			window.location.href='mailto:?subject='+document.title+'&body='+body+'';
+		}
+	</script>
+	<style>
+</style> 
+</head>
+</head>
+
+<body>
+<section id="on-a-blog" contextmenu="download">
+    <header class="section-header">
+        <h3>雨霖铃</h3>
+    </header>
+    <p>寒蝉凄切，对长亭晚，骤雨初歇。都门帐饮无绪，留恋处舟催发。执手相看泪眼，竟无语凝噎。念去去千里烟波，暮霭沉沉楚天阔。  多情自古伤离别，更那堪冷落清秋节。今宵酒醒何处?杨柳岸晓风残月。此去经年，应是良辰好景虚设。便纵有千种风情，更与何人说? </p>
+</section>
+
+<menu id="download" type="context">
+    <menuitem onclick="downloadSource()" icon="images/icon1.png">下载文件</menuitem>
+    <menuitem onclick="viewDemo()" icon="images/icon2.png">查看源文件</menuitem>
+    <menu label="我要分享...">
+        <menuitem onclick="getFeed()" icon="images/icon3.png">反馈</menuitem>
+        <menuitem onclick="sendEmail()" icon="images/icon4.png">Email</menuitem>
+    </menu>
+</menu>
+</body>
+</html>
