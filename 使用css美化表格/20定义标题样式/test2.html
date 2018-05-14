@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title></title>
+	<style type="text/css">
+	body,table,td{font-size:12px;}
+	table{
+		border:solid 2px red;
+		position:absolute;
+		width:500px;
+		height:300px;
+	}
+	th,td{
+		border:solid 1px #000;
+	}
+	.table1{
+		left:60px;
+		top:60px;
+		background:url(images/bg7.jpg);
+		border:solid 6px #333;
+	}
+	.table2{
+		left:100px;
+		top:90px;
+		border:solid 5px #555;
+	}
+	.table2 colgroup{
+		background:url(images/bg4.jpg);
+	}
+	.table3{
+		left:140px;
+		top:120px;
+		border:solid 4px #777;
+	}
+	.table3 .col{
+		background:url(images/bg8.jpg);
+	}
+	.table4{
+		left:180px;
+		top:150px;
+		border:solid 3px #777;
+	}
+	.table4 tbody{
+		background:url(images/bg1.jpg);
+	}
+	.table5{
+		left:220px;
+		top:180px;
+		border:solid 2px #888;
+	}
+	.table5 .row{
+		background:url(images/bg9.jpg);
+	}
+	.table6{
+		left:260px;
+		top:210px;
+		border:solid 1px #999;
+	}
+	.table6 .cell{
+		background:url(images/bg10.jpg);
+	/*简单来说就是按照以下顺序：td >tr >(tbody,thead,tfoot)> col> colgroup> table*/}
+</style>
+</head>
+<body>
+<h1>数据表格内元素层叠优先级</h1>
+<table class="table1">
+	<tr>
+		<td>&nbsp;</td>
+		<td>&nbsp;</td>
+		<td>&nbsp;</td>
+	</tr>
+	<tr>
+		<td>&nbsp;</td>
+		<td>&nbsp;</td>
+		<td>&nbsp;</td>
+	</tr>
+	<tr>
+		<td>&nbsp;</td>
+		<td>&nbsp;</td>
+		<td>&nbsp;</td>
+	</tr>
+</table>
+<table class="table2">
+	<colgroup>
+		<col class="col1">
+		<col class="col2">
+		<col class="col3">
+	</colgroup>
+	<tr>
+		<td>&nbsp;</td>
+		<td>&nbsp;</td>
+		<td>&nbsp;</td>
+	</tr>
+	<tr>
+		<td>&nbsp;</td>
+		<td>&nbsp;</td>
+		<td>&nbsp;</td>
+	</tr>
+	<tr>
+		<td>&nbsp;</td>
+		<td>&nbsp;</td>
+		<td>&nbsp;</td>
+	</tr>
+</table>
+<table class="table3">
+	<colgroup>
+		<col class="col">
+		<col>
+		<col class="col">
+	</colgroup>
+	<tr>
+		<td>&nbsp;</td>
+		<td>&nbsp;</td>
+		<td>&nbsp;</td>
+	</tr>
+	<tr>
+		<td>&nbsp;</td>
+		<td>&nbsp;</td>
+		<td>&nbsp;</td>
+	</tr>
+	<tr>
+		<td>&nbsp;</td>
+		<td>&nbsp;</td>
+		<td>&nbsp;</td>
+	</tr>
+</table>
+<table class="table4">
+	<thead>
+		<tr>
+		<td>&nbsp;</td>
+		<td>&nbsp;</td>
+		<td>&nbsp;</td>
+	</tr>
+</thead>
+<tbody>
+	<tr>
+		<td>&nbsp;</td>
+		<td>&nbsp;</td>
+		<td>&nbsp;</td>
+	</tr>
+	<tr>
+		<td>&nbsp;</td>
+		<td>&nbsp;</td>
+		<td>&nbsp;</td>
+	</tr>
+</tbody>
+</table>
+<table class="table5">
+	<tr class="row">
+		<td>&nbsp;</td>
+		<td>&nbsp;</td>
+		<td>&nbsp;</td>
+	</tr>
+	<tr>
+		<td>&nbsp;</td>
+		<td>&nbsp;</td>
+		<td>&nbsp;</td>
+	</tr>
+	<tr class="row">
+		<td>&nbsp;</td>
+		<td>&nbsp;</td>
+		<td>&nbsp;</td>
+	</tr>
+</table>
+<table class="table6">
+	<tr>
+		<td class="cell">&nbsp;</td>
+		<td>&nbsp;</td>
+		<td class="cell">&nbsp;</td>
+	</tr>
+	<tr>
+		<td>&nbsp;</td>
+		<td class="cell">&nbsp;</td>
+		<td>&nbsp;</td>
+	</tr>
+	<tr>
+		<td class="cell">&nbsp;</td>
+		<td>&nbsp;</td>
+		<td class="cell">&nbsp;</td>
+	</tr>
+</table>
+
+</body>
+</html>

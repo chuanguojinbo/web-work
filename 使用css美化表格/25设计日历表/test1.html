@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title></title>
+	<style type="text/css">
+	table{
+		border-collapse:collapse;
+		border:1px solid #dcdcdc;
+		font:normal 12px/1.5em Arial,Verdana,Lucida,Helvetica,sans-serif;
+	}
+	caption{
+		text-align:center;
+		line-height:46px;
+		font-size:20px;
+		color:blue;
+	}
+	td,th{
+		width:40px;
+		height:40px;
+		text-align:center;
+		border:solid 1px #dcdcdc;
+	}
+	th{
+		color:#000000;
+		background-color: #eeeeee;
+	}
+	td.current{
+		font-weight:bold;
+		color:#ffffff;
+		background-color:blue;
+	}
+	td.last_month, td.next_month{color:#dfdfdf;}
+	tr>td, tr>td+td+td+td+td+td+td{
+		color:#b3222b;
+		background-color:#f8f8f8;
+	}
+	tr>td+td{
+		color:#333333;
+		background-color:#ffffff;
+	}
+	col.day_off{
+		color:#b3222b;
+		background-color:#f8f8f8;
+	}
+</style>
+
+</head>
+<body>
+<table>
+    <caption>
+    2017年7月1日
+    </caption>
+    <colgroup span="7">
+    <col span="1" class="day_off">
+    <col span="5">
+    <col span="1" class="day_off">
+    </colgroup>
+    <thead>
+        <tr>
+            <th>日</th>
+            <th>一</th>
+            <th>二</th>
+            <th>三</th>
+            <th>四</th>
+            <th>五</th>
+            <th>六</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr>
+            <td class="last_month">29</td>
+            <td class="last_month">30</td>
+            <td class="current">1</td>
+            <td>2</td>
+            <td>3</td>
+            <td>4</td>
+            <td>5</td>
+        </tr>
+        <tr>
+            <td>6</td>
+            <td>7</td>
+            <td>8</td>
+            <td>9</td>
+            <td>10</td>
+            <td>11</td>
+            <td>12</td>
+        </tr>
+        <tr>
+            <td>13</td>
+            <td>14</td>
+            <td>15</td>
+            <td>16</td>
+            <td>17</td>
+            <td>18</td>
+            <td>19</td>
+        </tr>
+        <tr>
+            <td>20</td>
+            <td>21</td>
+            <td>22</td>
+            <td>23</td>
+            <td>24</td>
+            <td>25</td>
+            <td>26</td>
+        </tr>
+        <tr>
+            <td>27</td>
+            <td>28</td>
+            <td>29</td>
+            <td>30</td>
+            <td>31</td>
+            <td class="next_month">1</td>
+            <td class="next_month">2</td>
+        </tr>
+        <tr>
+            <td class="next_month">3</td>
+            <td class="next_month">4</td>
+            <td class="next_month">5</td>
+            <td class="next_month">6</td>
+            <td class="next_month">7</td>
+            <td class="next_month">8</td>
+            <td class="next_month">9</td>
+        </tr>
+    </tbody>
+</table>
+</body>
+</html>
