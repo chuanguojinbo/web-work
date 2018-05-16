@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title></title>
+	<script type="text/javascript" src="images/jquery1.4.js"></script>
+	<script type="text/javascript">
+		$(function(){
+			$('label').click(function(){
+				if(this.className=="select4"){this.className="select3";}
+				else{this.className="select4";}
+			})
+		})
+	</script>
+	<style type="text/css">
+	body{
+		font-family: "宋体";
+		font-size: 16px;
+	}
+	form{
+		width:270px;
+		margin:0 auto;
+		text-align: center;
+	}
+	input{
+		position:absolute;
+		left:-999em;
+		cursor:pointer;
+	}
+	.select4{
+		margin:0px;
+		padding-left:35px;
+		color:#00f;
+		line-height: 28px;
+		height:28px;
+		display: block;
+		background:url(images/1.jpg) no-repeat 0px 50%;
+		border:0px;
+	}
+	.select3{
+		margin:0px;
+		padding-left: 35px;
+		color:#000;
+		line-height: 28px;
+		display: block;
+		background: url(images/2.jpg) no-repeat 0px center;
+		border:0px;
+	}
+	p{
+		float:left;
+		padding-left:15px;
+	}
+	p.search{
+		clear:both;
+		float:none;
+		padding-left: 0;
+	}
+	p.search input{
+		width:120px;
+		height:16px;
+		border:1px solid #4890cb;
+		position:relative;
+		top:-5px;
+		left:0;
+		margin-right:8px;
+	}
+</style>
+</head>
+<body>
+<form>
+	<h3></h3>
+	<p class="search" ><img src="images/www.gif">
+		<input type="text">
+		<img src="images/search.gif">
+	</p>
+	<p>
+		<input type="checkbox" checked="" name="checkgroup" value="1" id="c1">
+		<label for="c1" class="select3">.com</label>
+	</p>
+	<p>
+		<input type="checkbox" name="checkgroup" value="1" id="c2">
+		<label for="c2" class="select3">.cn</label>
+	</p>
+	<p>
+		<input type="checkbox" name="checkgroup" value="1" id="c3">
+		<label for="c3" class="select4">.net</label>
+	</p>
+	<p>
+		<input type="checkbox" name="checkgroup" value="1" id="c4">
+		<label for="c4" class="select3">.org</label>
+	</p>
+	<p>
+		<input type="checkbox" checked="" name="checkgroup" value="1" id="c5">
+		<label for="c5" class="select3">.tv</label>
+	</p>
+	<p>
+		<input type="checkbox" checked="" name="checkgroup" value="1" id="c6">
+		<label for="c6" class="select3">.com.cn</label>
+	</p>
+	<p>
+		<input type="checkbox" checked="" name="checkgroup" value="1" id="c7">
+		<label for="c7" class="select4">.net.cn</label>
+	</p>
+	<p>
+		<input type="checkbox" checked="" name="checkgroup" value="1" id="c8">
+		<label for="c8" class="select3">.org.cn</label>
+	</p>
+</form>
+</body>
+</html>

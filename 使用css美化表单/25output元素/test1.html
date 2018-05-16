@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title></title>
+	<script type="text/javascript">
+		function multi(){
+			a=parseInt(prompt("请输入第一个数字：",66));
+			b=parseInt(prompt("请输入第二个数字：",66));
+			document.forms["form"]["result"].value=a*b;
+		}
+	</script> 
+</head>
+<body onload="multi()">
+<form action="testform.asp" method="get" name="form">
+	<output name="result"></output>
+</form>
+</body>
+</html>

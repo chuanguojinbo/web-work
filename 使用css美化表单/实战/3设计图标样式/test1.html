@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title></title>
+	<style type="text/css">
+	*{
+		margin:0;
+		padding:0;
+	}
+	body{
+		text-align: center;
+	}
+	#login{
+		margin:10px auto 10px;
+		text-align:left;
+	}
+	fieldset{
+		width:230px;
+		margin:20px auto;
+		font-size:12px;
+	}
+	label{
+		width:200px;
+		height: 26px;
+		line-height: 26px;
+		text-indent: 6px;
+		display:block;
+		font-weight: bold;
+	}
+	#name,#password{
+		border:1px solid #ccc;
+		width:160px;
+		height:22px;
+		margin-left: 6px;
+		padding-left: 20px;
+		line-height: 20px;
+	}
+	#name{
+		background:url(images/name.gif) no-repeat 2px 2px;
+	}
+	#password{
+		background:url(images/password.gif) no-repeat 2px 2px ;
+	}
+	.button_div{
+		text-align: center;
+		margin:6px auto;
+	}
+</style>
+</head>
+<body>
+<div id="login">
+	<fieldset>
+		<legend>用户登录</legend>
+		<form action="" method="post" class="form">
+			<label for="name">姓名</label>
+			<div><input name="name" type="text" id="name" value=""></div>
+			<label for="password">密码</label>
+			<div><input type="text" id="password" name="password"></div>
+			<div class="button_div">
+				<input type="image" src="images/login1.gif">
+			</div>
+		</form>
+	</fieldset>
+</div>
+</body>
+</html>

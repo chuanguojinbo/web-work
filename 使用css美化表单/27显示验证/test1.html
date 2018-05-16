@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title></title>
+	<script>
+		function check(){
+			var email=document.getElementById("email");
+			if(email.value==""){
+				alert("请输入Email地址");
+				return false;
+			}
+			else if(!email.checkValidity()){
+				alert("请输入正确的Email地址");
+				return false;
+			}
+			else{alert("您输入的地址有效");}
+		}
+	</script>
+</head>
+<body>
+	<form id="testform" onsubmit="return check();" novalidate="novalidate">
+		<label for="email">Email</label>
+		<input type="email" name="email" id="email">
+		<input type="submit" value="提交">
+	</form>
+
+</body>
+</html>

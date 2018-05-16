@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title></title>
+	<style type="text/css">
+	table{
+		text-align:left;
+		font-size:14px;
+		margin:0 auto;
+	}
+	td{padding:6px;}
+</style> 
+</head>
+<body>
+<form>
+	<table>
+		<tr>
+			<td><label for="user" accesskey="1">姓名</label></td>
+			<td><input type="text" name="text" value="张三" size="20" tabindex="1" id="user"></td>
+		</tr>
+		<tr>
+			<td><label for="password">密码：</label></td>
+			<td>
+				<input type="text" id="password" value="********" size="10" tabindex="0" name="password">
+			</td>
+		</tr>
+		<tr>
+			<td><label for="password1">确认：</label></td>
+			<td>
+				<input type="text" name="password1" id="password1" value="********" size="10" tabindex="2"></td>
+			</tr>
+			<tr>
+				<td colspan="2"><button tabindex="-1">提交</button></td>
+			</tr>
+		</table>
+	</form>
+
+</body>
+</html>

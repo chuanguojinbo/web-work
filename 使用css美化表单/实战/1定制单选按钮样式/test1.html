@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title></title>
+	<script type="text/javascript" src="images/jquery1.4.js"></script>
+	<script type="text/javascript">
+		$(function(){
+			$('label').click(function(){
+				$('label').attr('class','');
+				$('label').addClass('radio1');
+				$(this).addClass('radio2');
+			})
+
+		})
+	</script>
+	<style type="text/css">
+	body{
+		font-family: "黑体";
+		font-size: 16px;
+	}
+	form{
+		position:relative;
+		width:600px;
+		margin:0 auto;
+		text-align:center;
+	}
+	p{
+		width:200px;
+		float:left;
+		text-align: left;
+		
+		padding:0;
+		margin: 10px 0px;
+	}
+	input{
+		position:absolute;
+		left: -999em;
+	}
+	.radio1, .radio2{
+		margin:0px;
+		padding-left:40px;
+		color:#000;
+		line-height: 34px;
+		height:34px;
+		background:url(images/4.jpg) no-repeat left top;
+		cursor:pointer;
+		display:block;
+	}
+	.radio2{background:url(images/3.jpg) no-repeat left top;}
+</style>
+</head>
+<body>
+	<form>
+<h3>请选择您最喜欢的浏览器</h3>
+<p>
+	<input type="radio" checked="" id="radio0" value="radio" name="group">
+	<label for="radio0" class="radio1">Internet Explorer</label>
+</p>
+<p>
+	<input type="radio" checked="" id="radio1" value="radio" name="group">
+	<label for="radio1" class="radio1">Maxthon</label>
+</p>
+<p>
+	<input type="radio" checked="" id="radio2" value="radio" name="group">
+	<label for="radio2" class="radio2">Mozilla Firefox</label>
+</p>
+<p>
+	<input type="radio" checked="" id="radio3" value="radio" name="group">
+	<label for="radio3" class="radio1">Chrome</label>
+</p>
+<p>
+	<input type="radio" checked="checked" id="radio4" value="radio" name="group">
+	<label for="radio4" class="radio1">Opera</label>
+</p>
+<p>
+	<input type="radio" checked="" id="radio5" value="radio" name="group">
+	<label for="radio5" class="radio1">世界之窗</label>
+</p>
+<p>
+	<input type="radio" checked="" id="radio6" value="radio" name="group">
+	<label for="radio6" class="radio1">搜狗浏览器</label>
+</p>
+</form>
+</body>
+</html>

@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title></title>
+</head>
+<body>
+<form>
+	<p>请仔细阅读许可协议：</p>
+	<p>
+		<label for="textarea1" >kjfajfla</label>
+		<textarea name="textarea1" id="textarea1" cols="45" rows="5">许可协议具体内容.......</textarea>
+	</p>
+	<p>
+		<input type="submit" value="同意" >
+		<input type="submit" value="拒绝" id="no">
+	</p>
+	</form>
+	<script type="text/javascript">
+		if(!("autofocus" in document.getElementsByTagName("input"))){
+			document.getElementById("no").focus();
+		}
+	</script>
+</body>
+</html>
