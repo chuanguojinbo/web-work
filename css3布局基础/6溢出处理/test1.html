@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title></title>
+	<style type="text/css">
+		#cont1 div, #cont3 div,#cont5 div{
+			width: 300px;
+			height: 200px;
+		}
+		#cont2 div, #cont4 div, #cont6 div{
+			width: 100px;
+			height: 50px;
+		}
+		.cont{
+			float: left;
+			margin:4px;
+			overflow-y:visible;
+			padding:10px;
+			width: 200px;
+			height: 100px;
+		}
+		.cont, .cont div{border:solid 2px red;}
+	</style>
+</head>
+<body>
+<div id="cont1" class="cont" style="overflow-x:scroll;">
+	<div>style="overflow-x:scroll;"</div>
+</div>
+<div id="cont2" class="cont" style="overflow-x:scroll;">
+	<div>style="overflow-x:scroll;"</div>
+</div>
+<div id="cont3" class="cont" style="overflow-x:hidden;">
+	<div>style="overflow-x:hidden;"</div>
+</div>
+<div id="cont4" class="cont" style="overflow-x:hidden;">
+	<div>style="overflow-x:hidden;"</div>
+</div>
+<div id="cont5" class="cont" style="overflow-x:auto; 
+">
+	<div>style="overflow-x:auto;"</div>
+</div>
+<div id="cont6" class="cont" style="overflow-x:auto;">
+	<div>style="overflow-x:auto;"</div>
+</div>
+
+</body>
+</html>

@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title></title>
+	<style type="text/css">
+		* {
+    margin:0;
+    padding:0;
+}
+body { text-align:center; }
+	#model{
+		width: 800px;
+		margin-left: auto;
+		margin-right: auto;
+		text-align: left;
+	}
+	#header{
+		background:#ff00ff;
+	}
+	#main{
+		position: relative;
+		width:100%;
+		overflow:hidden;
+	}
+	#content{
+		float: left;
+		width: 55%;
+		background:#fc0;
+	}
+	#subplot{
+		width: 20%;
+		float: left;
+		background:#0cc;
+	}
+	#serve{
+		width: 25%;
+		float: right;
+		background:#9cf;
+
+	}
+	#content,#subplot,#serve{
+		padding-bottom: 9999px;
+		margin-bottom: -9999px;
+	}
+	#footer{background:#ff99ff;}
+	</style>
+</head>
+<body>
+<div id="model">
+    <div id="header">
+        <h1>网页标题</h1>
+        <h2>网页副标题</h2>
+    </div>
+    <div id="main">
+        <div id="content">
+            <h3>主信息区域</h3>
+            <p>正文内容</p>
+            <p>正文内容</p>
+        </div>
+        <div id="subplot">
+            <h3>次信息区域</h3>
+            <p>正文内容</p>
+        </div>
+        <div id="serve">
+            <dl>
+                <dt>功能服务区域</dt>
+                <dd>服务列表项</dd>
+                <dd>服务列表项</dd>
+                <dd>服务列表项</dd>
+                <dd>服务列表项</dd>
+                <dd>服务列表项</dd>
+                <dd>服务列表项</dd>
+                <dd>服务列表项</dd>
+                <dd>服务列表项</dd>
+            </dl>
+        </div>
+    </div>
+    <div id="footer">
+        <p>版权信息区域</p>
+    </div>
+</div>
+</body>
+</html>

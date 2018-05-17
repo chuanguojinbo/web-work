@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title></title>
+	<style type="text/css">
+	#box{
+		width: 500px;
+		height: 400px;
+		padding:8px 24px;
+		margin:6px;
+		border-style:outset;
+		border-width: 4px;
+		border-color: #aaa;
+		font-size: 14px;
+		color:#d02090;
+		list-style-position: inside;
+	}
+	#box h2{
+		padding-bottom: 12px;
+		border-bottom-style:double;
+		border-bottom-width: 6px;
+		border-bottom-color:#999;
+		text-align: center;
+		color: #000;
+
+	}
+	#box li{
+		padding: 6px 0;
+		border-bottom-style:dotted;
+		border-bottom-width:1px;
+		border-bottom-color: #6c6;
+	}
+</style>
+</head>
+<body>
+<ol id="box">
+    <h2>边框样式应用</h2>
+    <!--标题-->
+    <li>none：默认值，无边框，不受任何指定的border-width值影响。</li>
+    <!--列表项-->
+    <li>hidden：隐藏边框，IE不支持。</li>
+    <li>dotted：定义点线。</li>
+    <li>dashed：定义虚线。</li>
+    <li>solid：定义实线。</li>
+    <li>double：定义双线边框，两条线及其间隔宽等于指定的border-width值。</li>
+    <li>groove：根据border-color值定义D凹槽。</li>
+    <li>ridge：根据border-color值定义D凸槽。</li>
+    <li>inset：根据border-color值定义D凹边。</li>
+    <li>outset：根据border-color值定义D凸边。</li>
+</ol>
+</body>
+</html>
