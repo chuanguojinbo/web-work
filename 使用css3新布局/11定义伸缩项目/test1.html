@@ -1,0 +1,46 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title></title>
+<style type="text/css">
+    .flex-container{
+        display: -webkit-flex;
+        display: flex;
+        width: 500px;
+        height: 300px;
+        border:solid 1px red;
+    }
+    .flex-item{
+        background:blue;
+        width:300px;
+        height:400px;
+        margin:10px;
+    }
+    .flex-item:nth-child(1){
+        -webkit-order:4;
+        order: 4;
+    }
+    .flex-item:nth-child(2){
+        -webkit-order:2;
+        order: 2;
+    }
+    .flex-item:nth-child(3){
+        -webkit-order:3;
+        order: 3;
+    }
+    .flex-item:nth-child(4){
+        -webkit-order:1;
+        order:1;
+    }
+</style>
+</head>
+<body>
+<div class="flex-container">
+    <div class="flex-item">伸缩项目1</div>
+    <div class="flex-item">伸缩项目2</div>
+    <div class="flex-item">伸缩项目3</div>
+    <div class="flex-item">伸缩项目4</div>
+</div>
+</body>
+</html> 

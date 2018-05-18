@@ -1,0 +1,209 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>CSS Zen Garden: CSS设计之美</title>
+<meta content="dave shea" name="author">
+<meta 
+content="标准设计, CSS, 样式表, XHTML, 平面设计, W3C, 网页标准, 可视化, 显示" 
+name="keywords">
+<meta content="展示以CSS为基础的设计技术，以实现最佳视觉效果。只要选择列表中的任一个样式表，就可以将它加载到这个页面中。" 
+name="description">
+<meta content="all" name="robots">
+<!-- 修正会一闪而过的无样式内容。请参考 http://www.bluerobot.com/web/css/fouc.asp -->
+<script type="text/javascript"></script>
+<!--
+	这是一份XHTML结构文档，用来提供给设计师进行最大弹性设计的基础。
+	里面有不少没有用到的类和标签。在实际应用的时候，
+	你可以有选择的使用或设计。
+
+	不过我想你可能同意，如果使用表格来设计相同的页面效果，可以会有更好的效果。但这不是我们的目标。
+-->
+<STYLE type="text/css" media="all">
+
+/*定义网页列宽为300像素，则网页中每个栏目的最大宽度为300像素*/
+body {
+    -webkit-column-count:3;
+    -moz-column-count:3;
+    column-count: 3;
+}
+</STYLE>
+</head>
+<body id="css-zen-garden">
+<div id="container">
+    <div id="intro">
+        <div id="pageHeader">
+            <h1><span>CSS Zen Garden</span></h1>
+            <h2><span><acronym title="cascading style sheets">CSS</acronym>设计之美</span></h2>
+        </div>
+        <div id="quickSummary">
+            <p class="p1"><span>展示以<acronym 
+title="cascading style sheets">CSS</acronym>技术为基础，并提供超强的视觉冲击力。只要选择列表中任意一个样式表，就可以将它加载到本页面中，并呈现不同的设计效果。</span></p>
+            <p class="p2"><span>下载<a title="这个页面的HTML源代码不能够被改动。"  
+href="http://www.csszengarden.com/zengarden-sample.html">HTML文档</a> 和 <a 
+title="这个页面的CSS样式表文件，你可以更改它。"  
+href="http://www.csszengarden.com/zengarden-sample.css">CSS文件</a>。</span></p>
+        </div>
+        <div id="preamble">
+            <h3><span>启蒙之路</span></h3>
+            <p class="p1"><span>不同浏览器随意定义标签，导致无法相互兼容的<acronym 
+title="document object model">DOM</acronym>结构，或者提供缺乏标准支持的<acronym 
+title="cascading style sheets">CSS</acronym>等陋习随处可见，如今当使用这些不兼容的标签和样式时，设计之路会一路坎坷。</span></p>
+            <p class="p2"><span>现在，我们必须清除以前为了兼容不同浏览器而使用的一些过时的小技巧。感谢<acronym 
+title="world wide web consortium">W3C</acronym>、<acronym 
+title="web standards project">WASP</acronym>等标准组织，以及浏览器厂家和开发师们的不懈努力，我们终于能够进入Web设计的标准时代。</span></p>
+            <p class="p3"><span>CSS Zen 
+                Garden（样式表禅意花园）邀请您发挥自己的想象力，构思一个专业级的网页。让我们用慧眼来审视，充满理想和激情去学习CSS这个不朽的技术，最终使自己能够达到技术和艺术合而为一的最高境界。</span></p>
+        </div>
+    </div>
+    <div id="supportingText">
+        <div id="explanation">
+            <h3><span>这是什么？</span></h3>
+            <p class="p1"><span>对于网页设计师来说应该好好研究<acronym 
+title="cascading style sheets">CSS</acronym>。Zen Garden致力于推广和使用CSS技术，努力激发和鼓励您的灵感和参与。你可以从浏览高手的设计作品入门。只要选择列表中的任一个样式表，就可以将它加载到这个页面中。<acronym 
+title="hypertext markup language">HTML</acronym>文档结构始终不变，但是你可以自由的修改和定义<acronym 
+title="cascading style sheets">CSS</acronym>样式表。</span></p>
+            <p class="p2"><span><acronym 
+title="cascading style sheets">CSS</acronym>具有强大的功能，可以自由控制HTML结构。当然你需要拥有驾驭CSS技术的能力和创意的灵感，同时亲自动手，用具体的实例展示CSS的魅力，展示个人的才华。截至目前为止，很多Web设计师和程序员已经介绍过许多关于CSS应用技巧和兼容技术的各种技巧和案例。而平面设计师还没有足够重视CSS的潜力。你是不是需要从现在开始呢？</span></p>
+        </div>
+        <div id="participation">
+            <h3><span>邀您参与</span></h3>
+            <p class="p1"><span>我们邀请广大设计师参与到这项计划中来，当然包括您。你需要修改这个页面的样式表，所以要有良好的<acronym 
+title="cascading style sheets">CSS</acronym>技术。不过本文档已经详尽地加上批注，即使是<acronym 
+title="cascading style sheets">CSS</acronym>初学者，也能够在此基础上尝试设计出很棒的作品来。请参考<a title="CSS相关资源列表" 
+href="http://www.mezzoblue.com/zengarden/resources/"><acronym 
+title="cascading style sheets">CSS</acronym>资源</a>，里面提供了CSS入门教程和使用技巧。</span></p>
+            <p class="p2"><span>你虽然可以自由修改样式表，但是千万别改动<acronym 
+title="hypertext markup language">HTML</acronym>文档结构。如果你还感觉手比较生，没有思路。建议你先单击列表中的作品，通过深入学习和 研究别人的案例，以便从中找到设计的感觉。</span></p>
+            <p class="p3"><span>请下载<a title="="这个页面的HTML结构请不要改动。""  
+href="http://www.csszengarden.com/zengarden-sample.html">HTML</a>和<a 
+title="这个页面的CSS范例文件，你可以更改它。" 
+href="http://www.csszengarden.com/zengarden-sample.css">CSS</a>文件，然后尝试并努力在本地计算机中进行修改。当你设计完成之后，先将<acronym 
+title="cascading style sheets">CSS</acronym>样式表文件上传到你的网页服务器，再把样式表文件的网址<a 
+title="请用联络窗体给我们你的CSS档案" 
+href="http://www.mezzoblue.com/zengarden/submit/">告诉</a>我们。如果我们采用你的作品，就会自动下载相关图片，最后成品将放在我们的服务器上。</span></p>
+        </div>
+        <div id="benefits">
+            <h3><span>参与好处</span></h3>
+            <p class="p1"><span>为什么要邀请您参与这项计划呢？因为这里提供了一个平台，能够展现你的技术水平、激发你的设计灵感，并且所设计的<acronym 
+title="cascading style sheets">CSS</acronym>案例文档，将成为重要的学习资料。即使到了今天这些资料都是很珍贵的和重要的。越来越多主流网站开始采用CSS技术，但是还不够。虽然现在还不成气候，但总有一天这些资料会成为历史的宝藏。</span></p>
+        </div>
+        <div id="requirements">
+            <h3><span>参与要求</span></h3>
+            <p class="p1"><span><acronym 
+title="cascading style sheets, version 1">CSS1</acronym>已经落伍了。<acronym 
+title="cascading style sheets, version 2">CSS2</acronym>现在成为网页设计的主要技术标准。CSS Zen 
+                Garden采用的是可行、实用的<acronym title="cascading style sheets">CSS</acronym>语法，而不是那些仅能被个别超前浏览器所能解析的技术（如<acronym title="cascading style sheets, version 3">CSS3</acronym>）。实际上，我们唯一的要求就是你的<acronym 
+title="cascading style sheets">CSS</acronym>要符合标准。</span></p>
+            <p class="p2"><span>即便如此，你还需要考虑<acronym 
+title="cascading style sheets">CSS</acronym>的兼容性。因为即使是完全符合标准的<acronym 
+title="cascading style sheets">CSS</acronym>语法，不同浏览器所呈现的效果也是不一致的。很多设计师整天忙于CSS兼容性处理，这实在是件让人恼火的事情。也请你参考相关<a 
+title="CSS相关资源列表" 
+href="http://www.mezzoblue.com/zengarden/resources/">资源</a>了解一些Bug修正的信息。希望所有浏览器都能够完整、正确、统一的支持<acronym 
+title="cascading style sheets">CSS</acronym>是不切实际的，我们也不希望你用精准到像素级别CSS代码来实现在不同浏览器中具有相同的呈现效果。当然还是请你在各种主要浏览器中进行测试。如果你的设计无法在IE 5及以上版本浏览器中正常显示（因为超过90%以上的用户都使用这些浏览器），我们无法采用你的作品。</span></p>
+            <p 
+class="p3"><span>我们要求你提交原创作品，因此你必须尊重别人的版权。请尽可能不要使用有争议的素材；我们可以接受高雅的裸体素材，但是拒绝低俗的色情图片。</span></p>
+            <p class="p4"><span>这仅是一个示例，也是学习用的材料。你可以保留图片的完整版权，但我们要求你许可在<a 
+title="阅读Zen Garden的版权声明。" 
+href="http://creativecommons.org/licenses/sa/1.0/">本站</a>免费发布你的<acronym 
+title="cascading style sheets">CSS</acronym>作品，这样其他读者可以从中学习。</span></p>
+            <p class="p5"><span>带宽由<a 
+href="http://www.dreamfirestudios.com/">dreamfire studios</a>提供。</span></p>
+        </div>
+        <div id="footer"><a title="检查网站的XHTML是否合乎标准" 
+href="http://validator.w3.org/check/referer">XHTML</a> &nbsp; <a 
+title="检查网站的CSS是否合乎标准"  
+href="http://jigsaw.w3.org/css-validator/check/referer">CSS</a> &nbsp; <a 
+title="阅读本站版权声明，由慷慨的creative commons提供。" 
+href="http://creativecommons.org/licenses/by-nc-sa/1.0/">cc</a> &nbsp; <a 
+title="依据美国508条款，检查网站的亲和力" 
+href="http://bobby.watchfire.com/bobby/bobbyservlet?url=http%3a%2f%2fwww.mezzoblue.com%2fzengarden%2f&amp;output=submit&amp;gl=sec508&amp;test=">508</a> &nbsp; <a title="依据wai content accessibility guidelines 1，检查网站的亲和力" 
+href="http://bobby.watchfire.com/bobby/bobbyservlet?url=http%3a%2f%2fwww.mezzoblue.com%2fzengarden%2f&amp;output=submit&amp;gl=wcag1-aaa&amp;test=">aaa</a> </div>
+    </div>
+    <div id="linkList"> 
+        <!-- 这是最具弹性的设计部分 - 需要你花费很大的心思来设计这个列表。 -->
+        <div id="linkList2"> 
+            <!-- 你也许会因为链接而感到讶异，没有办法，这是为了配合 wcag 1 accessibility 使用的技巧。 --> 
+            <!-- 我也不喜欢这样，不过这是个视觉效果的练习。 -->
+            <div id="lselect">
+                <h3 class="select"><span>选择一项设计</span></h3>
+                <!-- 这是链接列表的起点，每页不会超过 8 个链接。 -->
+                <ul>
+                    <li><a title="快捷键: a" accesskey="a" 
+  href="http://www.csszengarden.com/">作品 #1</a> 创作 <a class="c" 
+  href="http://www.mezzoblue.com/"> 作者1 </a>&nbsp;
+                    <li><a title="快捷键: b" accesskey="b" 
+  href="http://www.csszengarden.com/">作品 #2</a> 创作 <a class="c" 
+  href="http://www.mezzoblue.com/"> 作者2 </a>&nbsp;
+                    <li><a title="快捷键: c" accesskey="c" 
+  href="http://www.csszengarden.com/">作品 #3</a> 创作 <a class="c" 
+  href="http://www.mezzoblue.com/"> 作者3 </a>&nbsp;
+                    <li><a title="快捷键: d" accesskey="d"
+  href="http://www.csszengarden.com/">作品 #4</a> 创作 <a class="c" 
+  href="http://www.mezzoblue.com/"> 作者4 </a>&nbsp;
+                    <li><a title="快捷键: e" accesskey="e" 
+  href="http://www.csszengarden.com/">作品 #5</a> 创作 <a class="c" 
+  href="http://www.mezzoblue.com/"> 作者5 </a>&nbsp;
+                    <li><a title="快捷键: f" accesskey="f" 
+  href="http://www.csszengarden.com/">作品 #6</a> 创作 <a class="c" 
+  href="http://www.mezzoblue.com/"> 作者6 </a>&nbsp;
+                    <li><a title="快捷键: g" accesskey="g" 
+  href="http://www.csszengarden.com/">作品 #7</a> 创作 <a class="c" 
+  href="http://www.mezzoblue.com/"> 作者7 </a>&nbsp;
+                    <li><a title="快捷键: h" accesskey="h" 
+  href="http://www.csszengarden.com/">作品 #8</a> 创作 <a class="c" 
+  href="http://www.mezzoblue.com/"> 作者8 </a>&nbsp; </li>
+                </ul>
+            </div>
+            <!--
+				如果你的页面还没有塞满，这里都不会显示，只是准备内容。
+				如果你为「选择一项设计」的 h3 标签订制了不少样式，这里也必须订制好。
+			<div id="lfavorites">
+				<h3 class="favorites"><span>最爱：</span></h3>
+				<ul>
+					<li><a href="#">filename</a> by <a href=" class="c">submitter</a>&nbsp;</li>
+					<li><a href="#">filename</a> by <a href=" class="c">submitter</a>&nbsp;</li>
+				</ul>
+			</div>
+			-->
+            <div id="larchives">
+                <h3 class="archives"><span>作品档案</span></h3>
+                <ul>
+                    <li><a title="浏览下一个设计。快捷键：n" accesskey="n" 
+  href="http://www.csszengarden.com/tr/chinese/?CSSfile=/001/001-zh.css&amp;page=1">下一个设计 
+                        &raquo;</a>
+                    <li><a title="浏览Zen Garden上的所有设计。快捷键：w" accesskey="w" 
+  href="http://www.mezzoblue.com/zengarden/alldesigns/">浏览所有设计</a> </li>
+                </ul>
+            </div>
+            <div id="lresources">
+                <h3 class="resources"><span>参考资源</span></h3>
+                <ul>
+                    <li><a title="检视这一个设计的CSS档案。快捷键：v" accesskey="v" 
+  href="../001-zh.css">查看这个设计的样式表<acronym 
+  title="cascading style sheets">CSS</acronym></a>
+                    <li><a title="链接到提供CSS相关信息的好网站。快捷键：r" accesskey="r" 
+  href="http://www.mezzoblue.com/zengarden/resources/"><acronym 
+  title="cascading style sheets">CSS</acronym>参考资料</a>
+                    <li><a title="关于Zen Garden的常见问答集。快捷键：q" accesskey="q" 
+  href="http://www.mezzoblue.com/zengarden/faq/">常见问题</a>
+                    <li><a title="提交你的CSS样式表。快捷键：s" accesskey="s" 
+  href="http://www.mezzoblue.com/zengarden/submit/">投稿</a>
+                    <li><a title="浏览这个页面的翻译版本。快捷键：t" accesskey="t" 
+  href="http://www.mezzoblue.com/zengarden/translations/">翻译文件</a> </li>
+                </ul>
+            </div>
+        </div>
+    </div>
+</div>
+<!-- 这些额外的标签，你可以发挥想象力进行其他的设计。 --> 
+<!-- 你可以为它们加上背景图片，利用width和height控制它们的大小，最后使用绝对定位方式在页面进行放置。 --> 
+<!-- 这种做法会在mozilla v1.0 到 v1.3 造成讨厌的透明gif色彩偏移问题，所以请务必使用这些浏览器测试你的作品。 -->
+<div id="extraDiv1"><span></span></div>
+<div id="extraDiv2"></div>
+<div id="extraDiv3"><span></span></div>
+<div id="extraDiv4"><span></span></div>
+<div id="extraDiv5"><span></span></div>
+<div id="extraDiv6"><span></span></div>
+</body>
+</html> 

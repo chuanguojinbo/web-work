@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title></title>
+	<style type="text/css">
+		#container{
+			column-count: 3;
+			-moz-column-count:3;
+			-webkit-column-count:3;
+		}
+		#left-sidebar{
+			padding:20px;
+			background-color: orange;
+		}
+		#contents{
+			padding:20px;
+			background-color:yellow;
+		}
+		#right-sidebar{
+			padding:20px;
+			background:limegreen;
+		}
+		#left-sidebar,#contents,#right-sidebar{
+			box-sizing: border-box;
+			/*此没什么乱用*/
+			/*多列布局更适合应用在显示文章内容方面，不适合用来设置网页结构*/
+		}
+	</style>
+</head>
+<body>
+<div id="container">
+    <div id="left-sidebar">
+        <h2>站内导航</h2>
+        <ul>
+            <li><a href="">新闻</a></li>
+            <li><a href="">博客</a></li>
+            <li><a href="">微博</a></li>
+            <li><a href="">社区</a></li>
+            <li><a href="">关于</a></li>
+        </ul>
+    </div>
+    <div id="contents">
+        <h2>《春夜喜雨》</h2>
+        <h1>杜甫</h1>
+        <p>好雨知时节，当春乃发生。</p>
+        <p>随风潜入夜，润物细无声。</p>
+        <p>野径云俱黑，江船火独明。</p>
+        <p>晓看红湿处，花重锦官城。</p>
+    </div>
+    <div id="right-sidebar">
+        <h2>友情链接</h2>
+        <ul>
+            <li><a href="">百度</a></li>
+            <li><a href="">谷歌</a></li>
+            <li><a href="">360</a></li>
+        </ul>
+    </div>
+</div>
+</body>
+</html>

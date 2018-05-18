@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title></title>
+	<style type="text/css">
+		*{
+			margin:0;
+			padding:0;
+			-moz-box-sizing:border-box;
+			-webkit-box-sizing:border-box;
+			box-sizing: border-box;
+		}
+		html,body{
+			height:100%;
+			color:#fff;
+		}
+		body{
+			min-width: 100%
+		}
+		header,section,article,nav,aside,footer{
+			display: block;
+			text-align:center;
+			text-shadow: 1px 1px 1px #444;
+			font-size:1.2em;
+		}
+		header{
+			background-color: hsla(200,10%,20%,.9);
+			min-height: 100px;
+			padding:10px 20px;
+			min-width: 100%;
+		}
+		section{
+			min-width: 100%;
+		}
+		nav{
+			background-color: hsla(300,60%,20%,.9);
+			padding:1%;
+			width:220px;
+		}
+		article{
+			background-color: hsla(120,50%,50%,.9);
+			padding:1%;
+		}
+		aside{
+			background-color: hsla(160,50%,50%,.9);
+			padding:1%;
+			width:220px;
+		}
+		footer{
+			background-color: hsla(250,50%,80%,.9);
+			min-height: 60px;
+			padding:1%;
+			min-width: 100%;
+		}
+		body{
+			display: -webkit-box;
+			display: -moz-box;
+			display: -ms-flexbox;
+			display: -webkit-flex;
+			display: flex;
+			-moz-box-orient:vertical;
+			-webkit-box-orient:vertical;
+			-moz-box-direction:normal;
+			-moz-box-lines:multiple;
+			-webkit-box-lines:multiple;
+			-webkit-flex-flow:column wrap;
+			-ms-flex-flow:column wrap;
+			flex-flow:column wrap;
+		}
+		section {
+    display: -moz-box;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: -webkit-flex;
+    display: flex;
+    -webkit-box-flex: 1;
+    -moz-box-flex: 1;
+    -ms-flex: 1;
+    -webkit-flex: 1;
+    flex: 1;
+    -moz-box-orient: horizontal;
+    -webkit-box-orient: horizontal;
+    -moz-box-direction: normal;
+    -webkit-box-direction: normal;
+    -moz-box-lines: multiple;
+    -webkit-box-lines: multiple;
+    -ms-flex-flow: row wrap;
+    -webkit-flex-flow: row wrap;
+    flex-flow: row wrap;
+    -moz-box-align: stretch;
+    -webkit-box-align: stretch;
+    -ms-flex-align: stretch;
+    -webkit-align-items: stretch;
+    align-items: stretch;
+}
+article {
+    -moz-box-flex: 1;
+    -webkit-box-flex: 1;
+    -ms-flex: 1;
+    -webkit-flex: 1;
+    flex: 1;
+    -moz-box-ordinal-group: 2;
+    -webkit-box-ordinal-group: 2;
+    -ms-flex-order: 2;
+    -webkit-order: 2;
+    order: 2;
+}
+aside {
+    -moz-box-ordinal-group: 3;
+    -webkit-box-ordinal-group: 3;
+    -ms-flex-order: 3;
+    -webkit-order: 3;
+    order: 3;
+}
+	</style>
+</head>
+<body>
+<header>页眉区域</header>
+<section>
+	<article>1.主体内容区域</article>
+	<nav>2.导航栏</nav>
+	<aside>3.其他栏目</aside>
+</section>
+<footer>页脚区域</footer>
+</body>
+</html>
