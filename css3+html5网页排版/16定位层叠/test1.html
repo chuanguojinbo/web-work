@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title></title>
+	<style type="text/css">
+		#sub1, #sub2{
+			position:absolute;
+			width: 200px;
+			height: 200px;
+		}
+		#sub1{
+			z-index: 10;
+			left: 50px;
+			top:50px;
+			background:red;
+		}
+		#sub2{
+			z-index: 1;
+			left: 20px;
+			top: 20px;
+			background:blue;
+		}
+	</style>
+</head>
+<body>
+<div id="contain">
+	<div id="sub1">元素1</div>
+	<div id="sub2">元素2</div>
+</div>
+</body>
+</html>

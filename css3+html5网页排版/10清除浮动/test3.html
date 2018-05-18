@@ -1,0 +1,26 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title></title>
+<style type="text/css">
+div {
+    border: solid 1px red;           	/* 增加边框，以方便观察 */
+    height: 50px;                 	/* 固定高度，以方便比较 */
+}
+#left, #middle, #right {
+    float: left;                     	/* 定义中间3栏向左浮动 */
+    width: 33%;                   	/* 定义中间3栏等宽 */
+}
+#left { height: 100px; }             	/* 定义左栏高出中栏和右栏 */
+#footer { clear: left;                	/* 为脚部栏目元素定义清除属性 */ }
+</style>
+</head>
+<body>
+<div id="header">头部信息</div>
+<div id="left">左栏信息</div>
+<div id="middle">中栏信息</div>
+<div id="right">右栏信息</div>
+<div id="footer">脚部信息</div>
+</body>
+</html> 

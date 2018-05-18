@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title></title>
+	<style type="text/css">
+		#contain1,#contain2,#contain3{
+			width: 380px;
+			height: 120px;
+			border:solid #666 1px;
+		}
+		#contain2{
+			position:absolute;
+			left: 120px;
+			top: 60px;
+			background:#f08080;
+		}
+		#contain3{
+			float: left;
+			background:#d2b48c;
+		}
+		#contain2 div{
+			color: #939;
+			border:solid 1px #f00;
+		}
+		#sub_div1{
+			width: 80px;
+			height:80px;
+			position:absolute;
+			right:10px;
+			bottom:10px;
+			background:#fef68f;
+		}
+		#sub_div2{
+			width: 80px;
+			height: 80px;
+			float: left;
+			background:#dda0dd;
+		}
+		#sub_div3{
+			width: 100px;
+			height: 90px;
+			background:#cf6;
+		}
+	</style>
+</head>
+<body>
+<div id="contain1">
+	元素1——流动
+</div>
+<div id="contain2">元素2——绝对定位
+	<div id="sub_div1">子元素1——绝对定位</div>
+	<div id="sub_div2">子元素2——浮动</div>
+	<div id="sub_div3">子元素3——流动</div>
+</div>
+<div id="contain3">元素3——浮动</div>
+</body>
+</html>
