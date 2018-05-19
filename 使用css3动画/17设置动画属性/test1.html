@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title></title>
+	<style type="text/css">
+		.ball{
+			width: 50px;
+			height: 50px;
+			background:yellow;
+			border-radius:100%;
+			box-shadow: 2px 2px 2px #999;
+			-moz-animation:ball 1s ease backwards;
+			-webkit-animation:ball 1s ease backwards;
+			-o-animation:ball 1s ease backwards;
+			-ms-animation:ball 1s ease backwards;
+			animation: ball 1s ease
+			backwards;
+		}
+		@-webkit-keyframes ball{
+			from{-webkit-transform:translate(0,0);}
+			to{-webkit-transform:translate(400px,0);}
+		}
+		@-moz-keyframes ball{
+			from{-moz-transform:translate(0,0);}
+			to{-moz-transform:translate(400px,0);}
+		}
+		@-o-keyframes ball{
+			from{-o-transform:translate(0,0);}
+			to{-o-transform:translate(400px,0);}
+		}
+		@-ms-keyframes ball{
+			from{-ms-transform:translate(0,0);}
+			to{-ms-transform:translate(400px,0);}
+		}
+		@keyframes ball{
+			from{transform:translate(0,0);}
+			to{transform:translate(400px,0);}
+		}
+	</style>
+</head>
+<body>
+<div class="ball"></div>
+</body>
+</html>

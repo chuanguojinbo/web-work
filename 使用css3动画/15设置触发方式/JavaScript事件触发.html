@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title></title>
+	<script type="text/javascript" src="images/jquery-1.10.2.js"></script>
+	<script type="text/javascript">
+		$(function(){
+			$('#button').click(function(){
+				$('.box').toggleClass('change');
+			});
+		});
+	</script>
+	<style type="text/css">
+		.box{
+			margin:4px;
+			background:#93fb40;
+			border-radius: 12px;
+			box-shadow:2px 2px 2px #999;
+			width:50%;
+			height: 100px;
+			transition:width 2s ease,height 2s ease;
+		}
+		.change{
+			width:100%;
+			height: 120px;
+		}
+	</style>
+</head>
+<body>
+<input type="button" name="button" id="button" value="触发过渡动画">
+<div class="box"></div>
+</body>
+</html>

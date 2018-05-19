@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title></title>
+	<style type="text/css">
+		.stage{
+			width: 600px;
+			height: 200px;
+			border:solid 1px red;
+			-webkit-perspective:1200px;
+			-moz-perspective:1200px;
+			-o-perspective:1200px;
+			perspective:1200px;
+		}
+		.container{
+			-webkit-transform-style:preserve-3d;
+			-moz-transform-style:preserve-3d;
+			-o-transform-style:preserve-3d;
+			-ms-transform-style:preserve-3d;
+			transform-style:preserve-3d;
+
+		}
+		img{
+			width: 120px;
+		}
+		img:nth-child(2){
+			-webkit-transform: rotateZ(45deg);
+			-moz-transform:rotateZ(45deg);
+			-o-transform: rotateZ(45deg);
+			-ms-transform: rotateZ(45deg);
+			transform: rotateZ(45deg);
+		}
+	</style>
+</head>
+<body>
+<div class="stage">
+	<div class="container"><img src="images/1.png"><img src="images/1.png"></div>
+</div>
+</body>
+</html>

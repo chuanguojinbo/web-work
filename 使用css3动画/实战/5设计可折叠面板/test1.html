@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title></title>
+	<style type="text/css">
+		.accordion{
+			background:#eee;
+			border:1px solid #999;
+			margin:2em;
+		}
+		.accordion h2{
+			margin:0;
+			padding:12px 0;
+			background:#ccc;
+		}
+		.accordion .section{
+			border-bottom:solid 1px #ccc;
+			background:#fff;
+		}
+		.accordion h3{
+			margin:0;
+			padding:0;
+			background:#eee;
+			padding:3px 1em;
+		}
+		 a{
+			font-weight: normal;
+			text-decoration: none;
+		}
+		div:target a{font-weight: bold;}
+		.accordion h3+div{
+			height:0;
+			padding:0 1em;
+			overflow: hidden;
+			-webkit-transition:height 0.3s ease-in;
+			transition:height 0.3s ease-in;
+		}
+		.accordion h3+div img{margin:4px;}
+		div:target div{
+			height:300px;
+			overflow:auto;
+		}
+	</style>
+</head>
+<body>
+<div class="accordion">
+    <h2>壁纸世界</h2>
+    <div id="one" class="section">
+        <h3> <a href="#one">花草植物</a> </h3>
+        <div><img src="images/11.png"></div>
+    </div>
+    <div id="two" class="section">
+        <h3> <a href="#two">旅游风光</a> </h3>
+        <div><img src="images/22.png"></div>
+    </div>
+    <div id="three" class="section">
+        <h3> <a href="#three">海底世界</a> </h3>
+        <div><img src="images/33.png"></div>
+    </div>
+</div>
+</body>
+</html>

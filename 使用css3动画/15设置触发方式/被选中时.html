@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title></title>
+	<style type="text/css">
+		label.name{
+			display: block;
+			margin:6px 2px;
+		}
+		input[type="text"],input[type="password"]{
+			padding:4px;
+			border:solid 1px #ddd;
+		}
+		input[type="checkbox"]{
+			transition:margin 1s ease;
+		}
+		input[type="checkbox"]:checked{
+			margin-left:2em;
+		}
+	</style>
+</head>
+<body>
+<form id=fm-form action="" method=post>
+    <fieldset>
+        <legend>用户登录</legend>
+        <label class="name" for="name">姓名
+            <input type="text" id="name" name="name" >
+        </label>
+        <p>技术专长<br>
+            <label>
+                <input type="checkbox" name="web" value="html" id="web_0">
+                HTML</label>
+            <br>
+            <label>
+                <input type="checkbox" name="web" value="css" id="web_1">
+                CSS</label>
+            <br>
+            <label>
+                <input type="checkbox" name="web" value="javascript" id="web_2" checked="checked">
+                JavaScript</label>
+            <br>
+        </p>
+    </fieldset>
+</form>
+</body>
+</html>

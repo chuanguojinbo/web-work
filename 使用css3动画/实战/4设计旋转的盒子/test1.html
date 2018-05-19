@@ -1,0 +1,105 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<style type="text/css">
+@keyframes spin{
+    0%{transform:rotateY(0deg);}
+    100%{transform:rotateY(360deg);}
+}
+/*定义画布样式 */
+.stage {
+    width: 300px;
+    height: 300px;
+    margin: 100px auto;
+    position: relative;
+    -webkit-perspective: 300px;
+    -moz-perspective: 300px;
+    -ms-perspective: 300px;
+    -o-perspective: 300px;
+    perspective: 300px;
+}
+/*定义盒子包含框样式 */
+.container {
+    -webkit-transform-style: preserve-3d;
+    -moz-transform-style: preserve-3d;
+    -ms-transform-style: preserve-3d;
+    -o-transform-style: preserve-3d;
+    transform-style: preserve-3d;}
+    .container:hover{
+        animation:spin 5s linear infinite;
+    }
+
+/*定义盒子六面基本样式 */
+.side {
+    background: rgba(255,0,0,0.3);
+    border: 1px solid red;
+    font-size: 60px;
+    font-weight: bold;
+    color: #fff;
+    height: 196px;
+    line-height: 196px;
+    position: absolute;
+    text-align: center;
+    text-shadow: 0 -1px 0 rgba(0,0,0,0.2);
+    text-transform: uppercase;
+    width: 196px;
+}
+.front {/*使用3D变换制作前面 */
+    -webkit-transform: translateZ(100px);
+    -moz-transform: translateZ(100px);
+    -ms-transform: translateZ(100px);
+    -o-transform: translateZ(100px);
+    transform: translateZ(100px);
+}
+.back {/*使用3D变换制作后面 */
+    -webkit-transform: rotateX(180deg) translateZ(100px);
+    -moz-transform: rotateX(180deg) translateZ(100px);
+    -ms-transform: rotateX(180deg) translateZ(100px);
+    -o-transform: rotateX(180deg) translateZ(100px);
+    transform: rotateX(180deg) translateZ(100px);
+}
+.left {/*使用3D变换制作左面 */
+    -webkit-transform: rotateY(-90deg) translateZ(100px);
+    -moz-transform: rotateY(-90deg) translateZ(100px);
+    -ms-transform: rotateY(-90deg) translateZ(100px);
+    -o-transform: rotateY(-90deg) translateZ(100px);
+    transform: rotateY(-90deg) translateZ(100px);
+}
+.right {/*使用3D变换制作右面 */
+    -webkit-transform: rotateY(90deg) translateZ(100px);
+    -moz-transform: rotateY(90deg) translateZ(100px);
+    -ms-transform: rotateY(90deg) translateZ(100px);
+    -o-transform: rotateY(90deg) translateZ(100px);
+    transform: rotateY(90deg) translateZ(100px);
+}
+.top {/*使用3D变换制作顶面 */
+    -webkit-transform: rotateX(90deg) translateZ(100px);
+    -moz-transform: rotateX(90deg) translateZ(100px);
+    -ms-transform: rotateX(90deg) translateZ(100px);
+    -o-transform: rotateX(90deg) translateZ(100px);
+    transform: rotateX(90deg) translateZ(100px);
+}
+.bottom {/*使用3D变换制作底面 */
+    -webkit-transform: rotateX(-90deg) translateZ(100px);
+    -moz-transform: rotateX(-90deg) translateZ(100px);
+    -ms-transform: rotateX(-90deg) translateZ(100px);
+    -o-transform: rotateX(-90deg) translateZ(100px);
+    transform: rotateX(-90deg) translateZ(100px);
+}
+</style>
+<title></title>
+</head>
+<body>
+<div class="stage">
+    <div class="container">
+        <div class="side front">前面</div>
+        <div class="side back">背面</div>
+        <div class="side left">左面</div>
+        <div class="side right">右面</div>
+        <div class="side top">顶面</div>
+        <div class="side bottom">底面</div>
+    </div>
+</div>
+</body>
+</html> 
