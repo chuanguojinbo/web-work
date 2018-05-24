@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title></title>
+	<script type="text/javascript" src="jquery/jquery-1.11.1.js"></script>
+	<script type="text/javascript">
+		$(function(){
+			$('a').each(function(){
+				$(this).attr('title',this.innerHTML+'('+$(this).attr('href')+')');
+			});
+		});
+	</script>
+</head>
+<body>
+<ul>
+    <li><a href="http://www.baidu.com/" target="_blank">百度</a></li>
+    <li><a href="http://www.sohu.com/" target="_self">搜狐</a></li>
+    <li><a href="http://www.sina.com.cn/" target="_top">新浪</a></li>
+    <li><a href="http://www.qq.com/" target="new">腾讯</a></li>
+</ul>
+</body>
+</html>

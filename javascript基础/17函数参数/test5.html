@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title></title>
+	<script type="text/javascript">
+		function add(a,b){
+			if(add.length!=arguments.length)
+				throw new Error('形参与实参不一致，请重新调用函数');
+			else 
+				return a+b;
+		}
+		try{
+			alert(add(2));
+		}
+		catch(e){
+			alert(e.message);
+		}
+	</script>
+</head>
+<body>
+
+</body>
+</html>

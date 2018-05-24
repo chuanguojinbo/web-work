@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title></title>
+	<script type="text/javascript">
+		var url='http://news.baidu.com';
+		var features='height=500,width=800,top=100,left=100,toolbar=no,menubar=no,scrollbars=no,resizable=no,location=no,status=no';
+		document.write('<a href="http://www.baidu.com/" target="news" >切换到百度首页</a>');
+		var me=window.open(url,'news',features);
+		setTimeout(function(){
+			if(me.closed){
+				alert('创建的窗口已经关闭');}
+			else{
+				me.close();
+			}
+			
+		},5000 );
+	</script>
+</head>
+<body>
+
+</body>
+</html>

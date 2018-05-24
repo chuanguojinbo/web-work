@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title></title>
+	<script type="text/javascript" src="jquery/jquery-1.11.1.js"></script>
+	<script type="text/javascript">
+		$(function(){
+			var span=document.getElementsByTagName('span')[0];
+			var span=$(span);//将dom对象转化为jquery对象
+			span.css('color','red');
+		})
+	</script>
+</head>
+<body>
+<div><span>文本块1</span></div>
+<p><span>文本块2</span></p>
+</body>
+</html>

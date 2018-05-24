@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title></title>
+	<script type="text/javascript">
+		var a="a";
+		window.b='window.b';
+		c='c';
+		alert(delete window.a);
+		alert(delete window.b);
+		alert(delete window.c);
+
+		alert(window.a);//全局变量不能被delete运算符删除
+		alert(window.b);//window对象上定义的属性可以
+		alert(window.c);//没有用var声明的也可以删除
+	</script>
+</head>
+<body>
+
+</body>
+</html>

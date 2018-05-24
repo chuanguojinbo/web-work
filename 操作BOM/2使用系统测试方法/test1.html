@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title></title>
+	<script type="text/javascript">
+		var user=prompt('请输入你的银行密码：')；
+		if(!!user){
+			var ok=confirm('你输入的密码为：\n'+user+'\n请确认');
+			if(ok){
+				alert('欢迎'+user);
+			}
+			else{
+				user=prompt('请重新输入密码：');
+				alert('欢迎'+user);
+			}
+		}
+		else{
+			user=prompt('请输入你的密码：');
+		}
+	</script>
+</head>
+<body>
+
+</body>
+</html>

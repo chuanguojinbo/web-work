@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title></title>
+	<script type="text/javascript">
+		function typeOf(o){
+			var _toString=Object.prototype.toString;
+			var _type={
+				'undefined':'undefined',
+				'number':'number',
+				'boolean':'boolean',
+				'string':'string',
+				'[object Function]':'function=====',
+				'[object RegExp]':'regexp',
+				'[object Array]':'array',
+				'[object Date]':'date',
+				'[object Error]':'error'
+			}
+			return _type[typeof o]||_type[_toString.call(o)] ||(o?'object':'null');
+		}
+		var a=Math.abs;
+		alert(typeOf(a));
+	</script>
+</head>
+<body>
+
+</body>
+</html>

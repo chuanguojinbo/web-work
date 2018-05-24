@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title></title>
+	<script type="text/javascript">
+		var error=false;
+		try{
+			var w=window.open('https://baidu.com','_blank');
+			
+			if(w==null){
+				error=true;
+			}
+		}
+		catch(ex){
+			error=true;
+		}
+		if(error){
+			alert('禁止浏览器弹出窗口')
+		}
+	</script>
+</head>
+<body>
+
+</body>
+</html>

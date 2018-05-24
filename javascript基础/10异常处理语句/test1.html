@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title></title>
+	<script type="text/javascript">
+		try{
+			alert('执行程序');
+			var err=new Error('异常');
+			throw err;
+		}
+		catch(a){
+			alert('错误名称：'+a.name+'\n错误信息:'+a.message);
+		}
+		finally{
+			alert('finally');
+		}
+	</script>
+</head>
+<body>
+
+</body>
+</html>

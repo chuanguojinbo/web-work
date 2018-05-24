@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title></title>
+	<script type="text/javascript">
+		function f(a,b){
+			var a=a%2;
+			var b=b%2;
+			if(a==0) return 1;//返回值大于0，a和b调换位置
+			if(b==0) return -1;//返回值小于0,位置不变
+
+		}
+		var a=[3,5,2,4,9,6,7];
+		a.sort(f);
+		alert(a);
+	</script>
+</head>
+<body>
+
+</body>
+</html>
