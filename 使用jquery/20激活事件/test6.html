@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title></title>
+	<script type="text/javascript" src="jquery/jquery-1.11.1.js"></script>
+	<script type="text/javascript">
+		$(function(){
+			$('input').focus(function(){
+				$('<span>单击一次！</span>').appendTo('body');
+			});
+			$('#ok').click(function(){
+				$('input').triggerHandler('focus');
+			});//不会执行浏览器的默认动作，只影响第一个匹配元素，trigger匹配所有元素
+		});
+	</script>
+</head>
+<body>
+<input type="text" value="">
+<button id="ok">ok</button>
+</body>
+</html>

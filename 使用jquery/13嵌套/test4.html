@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title></title>
+	<script type="text/javascript" src="jquery/jquery-1.11.1.js">
+		
+	</script>
+	<script type="text/javascript">
+		$(function(){
+			$('a').wrap(document.getElementsByTagName('li')[0]);
+			$('li').wrapAll(document.getElementsByTagName('ul')[0]);
+			$('li').wrapInner('<span></span>');//包裹被选元素中的inner html(即被选元素中的所有内容)
+
+		})
+	</script>
+	<style type="text/css">
+		span{
+			border:solid 1px red;
+			margin:2px 2px;
+		}
+	</style>
+</head>
+<body>
+<a href="#">超链接1</a><a href="#">超链接2</a><a href="#">超链接3</a>
+<ul>
+	    <li> </li>
+</ul>
+
+</body>
+</html>

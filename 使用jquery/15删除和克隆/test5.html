@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title></title>
+	<script type="text/javascript" src="jquery/jquery-1.11.1.js">
+	</script>
+	<script type="text/javascript">
+		$(function(){
+			$('span').click(function(){
+				$(this).css('color','red');
+			});
+			var span=$('span').remove();
+			$('div').prepend(span);
+		})
+	</script>
+</head>
+<body>
+<div>div元素</div>
+<span>span元素</span>
+</body>
+</html>

@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title></title>
+	<script type="text/javascript" src="jquery/jquery-1.11.1.js"></script>
+	<script type="text/javascript">
+		$(function(){
+			var divs=$('div');
+			divs.eq(0).css('color','red');
+			divs.filter('.red,#box1').css('color','red');
+			divs.slice(0,2).css('color','blue');
+		})
+	</script>
+</head>
+<body>
+<div>11111</div>
+<div id="box1">22222</div>
+<div class="red">33333</div>
+</body>
+</html>

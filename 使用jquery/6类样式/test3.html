@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title></title>
+	<script type="text/javascript" src="jquery/jquery-1.11.1.js"></script>
+	<script type="text/javascript">
+		$(function(){
+			$('li').each(function(){
+				this.onmouseover=function(){
+					$(this).toggleClass('bg');
+				}
+				this.onmouseout=function(){
+					$(this).toggleClass('bg');
+				}
+				this.onclick=function(){
+					$(this).toggleClass('bg1');
+				}
+			});
+		});
+	</script>
+	<style type="text/css">
+		.bg{background-color:#f9f;}
+		.bg1{background-color:#0cf;}
+	</style>
+</head>
+<body>
+<h1>宋词排行榜 </h1>
+<ol>
+    <li>苏 轼《念奴娇•赤壁怀古》</li>
+    <li>岳 飞《满江红•怒发冲冠》 </li>
+    <li>李清照《声声慢•寻寻觅觅》 </li>
+    <li>苏 轼《水调歌头•明月几时有》 </li>
+    <li>柳 永《雨霖铃•寒蝉凄切》 </li>
+    <li>辛弃疾《永遇乐•千古江山》 </li>
+    <li>姜 夔《扬州慢•淮左名都》 </li>
+    <li>陆 游《钗头凤•红酥手》 </li>
+    <li>辛弃疾《摸鱼儿•更能消》 </li>
+    <li>姜 夔《暗香•旧时月色》 </li>
+</ol>
+</body>
+</html>

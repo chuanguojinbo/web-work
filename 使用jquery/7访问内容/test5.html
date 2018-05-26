@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title></title>
+	<script type="text/javascript" src="jquery/jquery-1.11.1.js"></script>
+	<script type="text/javascript">
+		$(function(){
+
+		})
+	</script>
+</head>
+<body>
+<input type="text" value="文本框" />
+<input type="radio" value="单选按钮" />
+<input type="checkbox" value="复选框" />
+<input type="hidden" value="隐藏域" />
+<input type="submit" value="提交按钮"/>
+<script type="text/javascript">
+	alert($('input').val());
+	alert($($('input')[1]).val());
+	alert($($('input')[2]).val());
+	alert($($('input')[3]).val());
+	alert($($('input')[4]).val());
+</script>
+</body>
+</html>

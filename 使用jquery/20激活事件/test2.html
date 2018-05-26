@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title></title>
+	<script type="text/javascript" src="jquery/jquery-1.11.1.js"></script>
+	<script type="text/javascript">
+		$(function(){
+			$('div').bind('yes',function(){
+				alert($(this).text());
+			});
+			$('div').trigger('yes');//括号里的事件可以随意命名，该事件会在文档加载时自动触发
+		});
+	</script>
+</head>
+<body>
+<div>盒子</div>
+</body>
+</html>

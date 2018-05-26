@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title></title>
+	<script type="text/javascript" src="jquery/jquery-1.11.1.js"></script>
+	<script type="text/javascript">
+		$(function(){
+			$('div').bind('click',function(){
+				alert($(this).text());
+			});
+			$('p').bind('mouseover',function(){
+				$('div').trigger('click');//鼠标移动到段落文本时，触发在盒子上绑定的功能，盒子的功能可以正常使用
+			});
+		});
+	</script>
+</head>
+<body>
+<p>段落文本</p>
+<div>盒子</div>
+</body>
+</html>

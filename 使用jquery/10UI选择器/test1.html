@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title></title>
+	<script type="text/javascript" src="jquery/jquery-1.11.1.js"></script>
+	<script type="text/javascript">
+		$(function(){
+			$(':text').css('border','solid 1px red');
+			$('input:checkbox').css('border','solid 1px red');
+			$('input:radio').css('border','solid 1px red');
+			$(':image').css('border','solid 1px red');
+			$(':file').css('border','solid 1px red');
+			$(':submit').css('border','solid 1px red');
+			$(':reset').css('border','solid 1px red');
+			$(':password').css('border','solid 1px red');
+			$('button').css('border','solid 1px red');
+
+		})
+	</script>
+</head>
+<body>
+<form>
+    <input type="text" value="文本框" />
+    <input type="checkbox" value="复选框" />复选框
+    <input type="radio" value="单选按钮" />单选按钮
+    <input type="image" src="images/menu.gif" value="图像按钮" />
+    <input type="file" value="文件域" />
+    <input type="submit" value="提交按钮" />
+    <input type="reset" value="重置按钮" />
+    <input type="password" value="密码域" />
+    <input type="button" value="普通按钮" />
+    <select>
+        <option value="下拉菜单">下拉菜单</option>
+    </select>
+    <textarea>文本域</textarea>
+    <button>按钮</button>
+</form>
+
+
+</body>
+</html>

@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title></title>
+	<script type="text/javascript" src="jquery/jquery-1.11.1.js"></script>
+	<script type="text/javascript">
+		function getHtml(){
+			alert(this.innerHTML);
+		};
+		$(function(){
+			$('#myol li').bind('click',getHtml);
+			$('#add').bind('click',function(){
+				$('#myol').append('<li>列表元素'+($('#myol li').length+1)+'</li>');
+			});
+		});
+	</script>
+</head>
+<body>
+<ol id="myol">
+    <li>列表元素1</li>
+    <li>列表元素2</li>
+    <li>列表元素3</li>
+    <li>列表元素4</li>
+</ol>
+<button id="add">添加列表项目</button>
+</body>
+</html>

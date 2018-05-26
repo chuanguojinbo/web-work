@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title></title>
+	<script type="text/javascript" src="jquery/jquery-1.11.1.js"></script>
+	<script type="text/javascript">
+		$(function(){
+			$('div').bind('me',function(){
+				alert($(this).text());
+			});
+			$('div').bind('mouseover',function(){
+				$('div').trigger('me');//当鼠标移到上面时触发
+			})
+		});
+	</script>
+</head>
+<body>
+<div>盒子</div>
+</body>
+</html>

@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title></title>
+	<script type="text/javascript" src="jquery/jquery-1.11.1.js"></script>
+	<script type="text/javascript">
+		$(function(){
+			var position=$('p:last').position();
+			alert('左侧距离'+position.left+',顶部距离'+position.top);//position相对于最近的父元素，offset相对于整个文档
+		})
+	</script>
+	<style type="text/css">
+		div{
+			position:relative;
+			border:solid 1px solid;
+			margin:50px;
+		}
+	</style>
+</head>
+<body>
+	<div>
+<p>段落1</p>
+<p>段落2</p>
+</div>
+</body>
+</html>

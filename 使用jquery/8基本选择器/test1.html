@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title></title>
+	<script type="text/javascript" src="jquery/jquery-1.11.1.js"></script>
+	<script type="text/javascript">
+		$('#p1');//ID选择器
+		$('#box1 p');//包含选择器
+		$('#box1>#p1');//id选择器下的子选择器
+		$('p#p1');//id为p1的p，指定标签选择器
+		$('p[id="p1"]');//属性选择器，属性等于特定值
+		$('[id$='1']');//匹配id属性以1结尾的元素
+		$('#box1 [id^="p"]');//匹配id属性以p开头的元素，被包含
+		$('[id*="1"]');//匹配id属性中包含子字符串'1'的元素
+	</script>
+</head>
+<body>
+<div id='box1'>
+	<p id="p1">段落文本1</p>
+</div>
+<div id="box2">
+	<p id="p2">段落文本2</p>
+</div>
+<p id="p3">段落文本3</p>
+</body>
+</html>
