@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title></title>
+	<script type="text/javascript">
+		var queryString=function(){
+			var q=location.search.substring(1);
+			var a=q.split('&');
+			//将字符串变为数组
+			var o={};
+			//定义一个临时对象
+			for(var i=0;i<a.length;i++){
+				var n=a[i].indexOf('=');
+				if(n==-1) continue;
+				var v1=a[i].substring(0,n);
+				var v2=a[i].substring(n+1);
+				o[v1]=unescape(v2);
+			}
+			return o;
+		}
+		var f1=queryString();
+		for(var i in f1){alert(i+'='+f1[i]);}
+	</script>
+</head>
+<body>
+
+</body>
+</html>

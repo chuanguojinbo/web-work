@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title></title>
+</head>
+<body>
+<h1>一级标题</h1>
+<h2>二级标题</h2>
+<p>段落文本</p>
+<script type="text/javascript">
+	var o=document.getElementsByTagName('body')[0].childNodes;//获取body元素下所有子元素
+	for(var i=0;i<o.length;i++){
+		o[i].onmouseover=function(i){
+			//为每个元素注册鼠标移过时事件延迟处理函数
+			return function(){
+				f(o[i])
+			}
+		}(i);
+		o[i].onmouseout=function(i){
+			//让每个子元素在鼠标移出时清除延迟处理函数
+			return function(){
+				clearTimeout(o[i].out);
+				//调用clearTimeout()方法，清除已注册的延迟处理函数
+			}
+		}(i);
+	}
+	function f(o){
+		//为防止混淆多个注册的延迟处理函数，分别把不同元素的延迟处理函数的引用存储在该元素对象的out属性中
+		o.out=setTimeout(function(){
+			alert(o.tagName);
+		},500);
+	}
+</script>
+</body>
+</html>

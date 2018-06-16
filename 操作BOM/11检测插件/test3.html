@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title></title>
+	<script type="text/javascript">
+		//分别创建两个函数，用于检测ie和其他插件
+		//如果某个函数无法检测，调用另一个函数
+		function hasPlugin(name1){
+			name1=name1.toLowerCase();
+			for(var i=0;i<navigator.plugins.length;i++){
+				if(navigator.plugins[i].name.toLowerCase().indexOf(name1)>-1){
+					return true;
+				}
+			}
+			return false;
+		}
+
+		function hasIEPlugin(name){
+			try{
+				new ActiveXObject(name);
+				return true;
+			}
+			catch(ex){
+				return false;
+			}
+		}
+		function hasFlash(){
+			var result=hasPlugin('Flash');
+			if(!result){
+				result=hasIEPlugin('ShockwaveFlash.ShockwaveFlash');
+			}
+			return result;
+		}
+		function hasQuickTime(){
+			var result=hasPlugin('QuickTime');
+			if(!result){
+				result=hasIEPlugin('QuickTime.QuickTime');
+			}
+			return result;
+		}
+		alert(hasFlash());
+		alert(hasQuickTime());
+	</script>
+</head>
+<body>
+
+</body>
+</html>

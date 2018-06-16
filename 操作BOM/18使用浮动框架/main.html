@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>与客户交互页面</title>
+	<script type="text/javascript">
+		function request(){
+			var user=document.getElementById('user');
+			var pass=document.getElementById('pass');
+			var s='server.html?user='+user.value+'&pass='+pass.value;
+			hideIFrame(s);
+		}
+		function callback(b,n){
+			if(b&&n){
+				var e=document.getElementsByTagName('body')[0];
+				e.innerHTML='<h1>'+n+'</h1><p>您好，欢迎登陆站点</p>';
+			}
+			else{
+				alert('输入的用户名或密码有误，请重新输入');
+				var user=parent.document.getElementById('user');
+				var pass=parent.docuemnt.getElementById('pass');
+				user.value='';
+				pass.value='';
+			}
+		}
+		window.onload=function(){
+			var hideFrame;
+			var b=document.getElementById('submit');
+			b.onclick=request;
+		}
+		function hideIFrame(url){
+			var hideFrame=null;
+			hideFrame=document.createElement('iframe');
+			hideFrame.name='hideFrame';
+			hideFrame.id='hideFrame';
+			hideFrame.style.height='0px';
+			hideFrame.style.width='0px';
+			hideFrame.style.position='absolute';
+			hideFrame.style.visibility='hidden';
+			document.body.appendChild(hideFrame);
+			setTimeout(function(){
+				frames['hideFrame'].location.href=url;
+			},1000);
+		}
+	</script>
+</head>
+<body>
+<h1>用户登录</h1>
+用户名 <input name="" id="user" type="text"><br /><br />
+密　码 <input name="" id="pass"  type="password"><br /><br />
+<input name="submit" type="button" id="submit" value="提交" >
+</body>
+</html>

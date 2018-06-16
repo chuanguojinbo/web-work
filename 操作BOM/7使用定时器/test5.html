@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title></title>
+</head>
+<body>
+<input type="text">
+<script type="text/javascript">
+	var t=document.getElementsByTagName('input')[0];
+	var i=1;
+	var out=setInterval(f,1000);
+	//定义周期性执行的函数
+	function f(){
+		t.value=i++;
+		if(i>10){
+			clearTimeout(out);
+			alert('10秒钟已到');
+		}
+	}
+</script>
+</body>
+</html>

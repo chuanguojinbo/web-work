@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title></title>
+	<script type="text/javascript">
+		function hasIEPlugin(name1){
+			try{
+				new ActiveXObject(name1);//创造自动对象并返回其引用
+				return true;
+			}
+			catch(ex){
+				return false;
+			}
+		}
+		alert(hasIEPlugin('ShockwaveFlash.ShockwaveFlash'));
+		//参数为所创建对象的类型，如果有相应插件就能创建，否则会返回错误
+		alert(hasIEPlugin('QuickTime.QuickTime'));
+	</script>
+</head>
+<body>
+
+</body>
+</html>

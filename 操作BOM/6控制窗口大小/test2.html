@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title></title>
+	<script type="text/javascript">
+		window.onload=function(){
+			timer=window.setInterval('jump()',1000);
+		}
+		function jump(){
+			window.resizeTo(200,200);
+			x=Math.ceil(Math.random()*1024);
+			y=Math.ceil(Math.random()*760);
+			window.moveTo(x,y);//貌似只能用在ie
+		}
+	</script>
+</head>
+<body>
+
+</body>
+</html>

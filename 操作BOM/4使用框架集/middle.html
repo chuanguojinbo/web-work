@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title></title>
+
+</head>
+<body>
+<h1>middle.htm</h1>
+<dl>
+	<dt>在最高层窗口中访问本框架的方式：</dt>
+	<dd>window.frames[1]</dd>
+    <dd>window.frames["middle"]</dd>
+	<dd>top.frames[1]</dd>
+    <dd>top.frames["middle"]</dd>
+	<dd>frames[1]</dd>
+    <dd>frames["middle"]</dd>    
+</dl>
+<p>单击本页面，调用第1个框架窗口（left)的函数left()</p>
+<script type="text/javascript">
+	var name='middle';
+	window.onload=function(){
+		document.getElementsByTagName('body')[0].onclick=f;
+	}
+	var f=function(){
+		top.frames[0].left();
+	}
+	function left(){
+		alert(name);
+	}
+</script>
+</body>
+</html>

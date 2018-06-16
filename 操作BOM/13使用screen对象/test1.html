@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title></title>
+</head>
+<body>
+<script type="text/javascript">
+	function center(url){
+		//窗口居中处理函数
+		var w=screen.availWidth/2;
+		//获取客户端屏幕的宽度一半
+		var h=screen.availHeight/2;
+		//获取客户端屏幕高度的一半
+		var t=(screen.availHeight-h)/2;
+		//计算居中显示时顶部坐标
+		var l=(screen.availWidth-w)/2;
+		//计算居中显示时左侧坐标
+		var p='top='+t+',left='+l+',width='+w+',height='+h;
+		var win=window.open(url,'url',p);
+		win.focus();
+	}
+	center('https://www.baidu.com/');
+</script>
+</body>
+</html>

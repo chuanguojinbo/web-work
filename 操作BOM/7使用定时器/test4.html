@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title></title>
+
+</head>
+<body>
+<input type="text">
+<script type="text/javascript">
+	var t=document.getElementsByTagName('input')[0];
+	var i=1;
+	function f(){
+		var out=setTimeout(//定义延迟执行的方法
+			function(){
+				//定义延迟执行函数
+				t.value=i++;
+				//递加数字
+				f();
+				//调用包含setTimeout（）方法的函数,不断调用自身，使数字变大
+			},1000);
+		//设置每秒执行一次调用
+		if(i>10){
+			clearTimeout(out);
+			alert('10秒钟已到');
+			//如果超过10次，则清除执行，并弹出提示信息
+		}
+	}
+	f();
+</script>
+</body>
+</html>

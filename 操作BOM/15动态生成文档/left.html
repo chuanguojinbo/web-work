@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta http-equiv="Content-Type" content="text/html;charset=gb2312">
+	<title></title>
+</head>
+<body>
+<script type="text/javascript">
+	window.onload=function(){
+		document.body.onclick=f;
+	}
+	function f(){
+		parent.frames[1].document.open();
+		parent.frames[1].document.write('<h2>动态生成右侧框架的标题</h2>');
+		parent.frames[1].document.close();
+	}
+</script>
+</body>
+</html>

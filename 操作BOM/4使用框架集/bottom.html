@@ -17,11 +17,10 @@
 <p>单击本页面，让第2个框架窗口（middle)背景色为红色</p>
 <script type="text/javascript">
 	window.onload=function(){
-		document.body.onclick=f;
+		windows.frames[0].document.getElementsByTagName('body')[0].style.backgroundColor='red';
 	}
-	var f=function(){
-		parent.frames[1].document.body.style.backgroundColor='red';
-	}
+
+
 </script>
 </body>
 </html>

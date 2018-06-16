@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title></title>
+</head>
+<body>
+<h1>right.htm</h1>
+<dl>
+	<dt>在最高层窗口中访问本框架的方式：</dt>
+	<dd>window.frames[2]</dd>
+    <dd>window.frames["right"]</dd>
+	<dd>top.frames[2]</dd>
+    <dd>top.frames["right"]</dd>
+	<dd>frames[2]</dd>
+    <dd>frames["right"]</dd>    
+</dl>
+<p>单击本页面，让第4个框架窗口（middle)背景色为红色</p>
+<script type="text/javascript">
+	window.onload=function(){
+		document.getElementsByTagName('body')[0].onclick=f;
+	}
+	var f=function(){
+		top.frames[3].document.getElementsByTagName('body')[0].style.backgroundColor='red';
+	}
+</script>
+</body>
+</html>

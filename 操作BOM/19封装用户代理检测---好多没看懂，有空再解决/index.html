@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title></title>
+	<script type="text/javascript">
+		var client=function(){
+			var engine={
+				trident:0,
+				gecko:0,
+				webkit:0,
+				khtml:0,
+				presto:0,
+				ver:null
+			};
+			var browser={
+				ie:0,
+				firefox:0,
+				safari:0,
+				konq:0,
+				opera:0,
+				chrome:0,
+				ver:null
+			};
+			var system={
+				win:false,
+				mac:false,
+				x11:false
+			};
+
+			var ua=navigator.userAgent;
+			if(/AppleWebkit\/(\S+).test(ua)){
+				engine.ver=RegExp['$1'];
+				engine.webkit=parseFloat(engine.ver);
+				if(\OPR\)
+			}
+		}
+	</script>
+</head>
+<body>
+
+</body>
+</html>

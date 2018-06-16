@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>与客户交互页面</title>
+	<script type="text/javascript">
+		function request(){
+			var user=document.getElementById('user');
+		var pass=document.getElementById('pass');
+		var s='user='+user.value+'&pass='+pass.value;
+		parent.frames[1].location.href='server.html?'+s;
+		}
+		function response(b,n){
+			if(b){
+				var e=document.getElementsByTagName('body')[0];
+				e.innerHTML='<h1>'+n+'</h1><p>您好，欢迎登陆站点</p>';
+
+			}
+			else{
+				alert('输入的用户名或密码有误，请重新输入');
+				var user=parent.frames[0].document.getElementById('user');
+				var pass=parent.frames[0].document.getElementById('pass');
+				user.value='';
+				pass.value='';
+			}
+		}
+		window.onload=function(){
+			var b=document.getElementById('submit');
+			b.onclick=request;
+		}
+	</script>
+</head>
+<body>
+<h1>用户登录</h1>
+用户名 <input name="" id="user" type="text"><br /><br />
+密　码 <input name="" id="pass"  type="password"><br /><br />
+<input name="submit" type="button" id="submit" value="提交" >
+</body>
+</html>
