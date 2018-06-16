@@ -1,2 +1,2 @@
 # web-work
-web fornt-end practice
+web front-end practice
